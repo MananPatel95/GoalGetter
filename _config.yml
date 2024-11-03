@@ -1,19 +1,19 @@
 #page title
-page_title                                : Countries Quiz                                          # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+page_title                                : Goal Getter                                        # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
 
 # App Info
-ios_app_id                                : 6698896459                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
+ios_app_id                                : 6737703423                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 ios_app_country                           : ca                                        # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
-appstore_link                             : https://apps.apple.com/us/app/countriesquiz/id6698896459?platform=iphone                                          # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
+appstore_link                             : https://testflight.apple.com/join/s9V9dssx                                          # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
 playstore_link                            :                                           # Enter Google Play Store URL.
 presskit_download_link                    :                                         # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
                                                                                       # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
 
 app_icon                                  : assets/app-icon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
-app_name                                  : Countries Quiz                                        # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_name                                  : Goal Getter                                        # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 : Free                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : Test your global knowledge! Guess all the countries, flags, and capitals of the world!
+app_description                           : Transform your life - tracking companion that helps you reach all your goals!
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
@@ -21,7 +21,7 @@ enable_smart_app_banner                   : true                                
 your_name                                 : Manan Patel                                
 your_link                                 : https://mananpatel.info                     
 your_city                                 : Calgary                                
-email_address                             : manan.patel@outlook.com
+email_address                             : manan@mananpatel.info
 facebook_username                         :                                           
 instagram_username                        : 
 twitter_username                          : 
@@ -32,17 +32,17 @@ mastodon_link                             :
 
 # Feature List
 features:
-  - title                                 : Interactive World Map
-    description                           : Dive into a beautifully designed, interactive world map for hands-on learning and exploration.
-    fontawesome_icon_name                 : globe-americas
+  - title                                 : Habit Tracking Made Simple
+    description                           : Track your daily habits with an intuitive and beautifully designed interface that makes consistency effortless.
+    fontawesome_icon_name                 : check-circle
 
-  - title                                 : Customizable Settings
-    description                           : Tailor your quiz experience with adjustable settings for both relaxed learning and intense challenges.
-    fontawesome_icon_name                 : cogs
+  - title                                 : Customizable Goals
+    description                           : Create and customize your personal goals and habits, set reminders, and track your progress your way.
+    fontawesome_icon_name                 : bullseye
 
-  - title                                 : Multiple Game Modes
-    description                           : Learn, practice, and test your knowledge with different game modes, including country guessing, flag guessing, and capital guessing.
-    fontawesome_icon_name                 : graduation-cap
+  - title                                 : Progress Insights
+    description                           : Visualize your journey with detailed statistics and progress reports that keep you motivated and accountable.
+    fontawesome_icon_name                 : chart-line
 
 # Theme Settings
 topbar_color                              : "#000000"
