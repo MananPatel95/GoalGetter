@@ -82,6 +82,8 @@
         position: relative;
         width: 100%;
         height: 100%;
+        border-radius: 40px;
+        overflow: hidden;
     }
 
     .screenshot {
@@ -92,6 +94,14 @@
         height: 100%;
         object-fit: cover;
         transition: opacity 0.5s ease-in-out;
+        border-radius: 40px;
+        -webkit-mask-image: -webkit-radial-gradient(white, black);
+    }
+
+    .videoContainer {
+        border-radius: 40px;
+        overflow: hidden;
+        -webkit-mask-image: -webkit-radial-gradient(white, black);
     }
     </style>
 </body>
