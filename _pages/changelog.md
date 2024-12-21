@@ -7,7 +7,7 @@ include_in_header: true
 # Goal Getter App - Changelog
 
 ## Version 1.10.0 - Dec 2024
-- Add dates in Bottom Tab bar, and optionLast push of 2024! Keep pushing.
+Last week of 2024! Keep pushing.
 
 New changes for you:
 - Countdown Goals: You can add an end date for a goal and count down to something
