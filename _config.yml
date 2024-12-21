@@ -33,12 +33,24 @@ mastodon_link                             :
 # Feature List
 features:
   - title                                 : Habit Tracking Made Simple
-    description                           : Track your daily habits with an intuitive and beautifully designed interface that makes consistency effortless.
+    description                           : Intuitive and beautifully designed interface that makes consistency effortless
     fontawesome_icon_name                 : check-circle
 
   - title                                 : Customizable Goals
-    description                           : Create and customize your personal goals and habits, set reminders, and track your progress your way.
+    description                           : Customize your personal goals with completion, frequency, and priority
     fontawesome_icon_name                 : bullseye
+
+  - title                                 : Countdown and Abstinence Goal Types
+    description                           : Countdown to a special date or abstain from a habit for a set period of time
+    fontawesome_icon_name                 : clock
+
+  - title                                 : Daily, Weekly, Monthly, and Yearly Views
+    description                           : Experience a comprehensive overview of your progress with daily, weekly, monthly, and yearly views
+    fontawesome_icon_name                 : calendar-alt
+
+  - title                                 : Widgets
+    description                           : Insightful widgets available right on your Home Screen or Lock Screen
+    fontawesome_icon_name                 : chart-line
 
   - title                                 : Progress Insights
     description                           : Visualize your journey with detailed statistics and progress reports that keep you motivated and accountable.
