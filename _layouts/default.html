@@ -42,8 +42,9 @@
                             </h2>
                         </div>
                         <div class="appDescriptionContainer">
-                            <p class ="appDescription">
-                                {{ site.app_description }}
+                            <h1 class="mainTitle">Keep track of the important things with Goal Getter reminders.</h1>
+                            <p class="mainDescription">
+                                Your life goals, deadlines, and milestones... Create beautiful progress bars, timers and countdowns that are always visible on all your everyday devices. What better place to remind yourself about the things that matter?
                             </p>
                         </div>
                         <div class="downloadButtonsContainer">
@@ -61,8 +62,8 @@
                                     <img src="assets/features/homescreen.png" alt="Home Screen Features">
                                 </div>
                                 <div class="featureText">
-                                    <h3>On your iPhone's Home Screen.</h3>
-                                    <p>Keep track of your goals right from your home screen with our beautiful widgets.</p>
+                                    <h3>On your iPhone's Home Screen</h3>
+                                    <p>Track your daily progress with beautiful widgets that keep you motivated and focused on your goals.</p>
                                 </div>
                             </div>
                             
@@ -71,8 +72,8 @@
                                     <img src="assets/features/lockscreen.png" alt="Lock Screen Features">
                                 </div>
                                 <div class="featureText">
-                                    <h3>On your iPhone's Lock Screen.</h3>
-                                    <p>Stay on top of your progress with lock screen widgets - see your goals at a glance.</p>
+                                    <h3>On your Lock Screen</h3>
+                                    <p>Get instant updates on your progress with elegant Lock Screen widgets - your goals are always just a glance away.</p>
                                 </div>
                             </div>
                             
@@ -81,8 +82,8 @@
                                     <img src="assets/features/ipad.png" alt="iPad Features">
                                 </div>
                                 <div class="featureText">
-                                    <h3>On your iPad.</h3>
-                                    <p>Take advantage of the larger screen with our specially designed iPad interface.</p>
+                                    <h3>On your iPad</h3>
+                                    <p>A beautiful, optimized interface for iPad that helps you visualize and achieve your goals on a larger canvas.</p>
                                 </div>
                             </div>
                         </div>
@@ -205,6 +206,77 @@
         .featureCard {
             max-width: 400px;
             margin: 0 auto;
+        }
+    }
+
+    .mainTitle {
+        font-size: 3.2rem;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        color: #ffffff;
+        font-weight: 600;
+        max-width: 800px;
+    }
+
+    .mainDescription {
+        font-size: 1.8rem;
+        line-height: 1.5;
+        color: rgba(255, 255, 255, 0.9);
+        max-width: 700px;
+        margin-bottom: 40px;
+    }
+
+    .featureCard {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(20px);
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .featureImage {
+        height: 300px;
+        position: relative;
+    }
+
+    .featureImage img {
+        object-fit: contain;
+        padding: 20px;
+    }
+
+    .headerBackground {
+        background: linear-gradient(135deg, #1a1a1a 0%, #363b3d 100%);
+    }
+
+    .secondaryFeatures {
+        background: linear-gradient(180deg, #f8f8f8 0%, #ffffff 100%);
+        padding: 120px 0;
+    }
+
+    .secondaryFeatures .featureGrid {
+        gap: 60px;
+    }
+
+    .iphonePreview {
+        transform: scale(1.1);
+        margin-top: 40px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .mainTitle {
+            font-size: 2.4rem;
+            padding: 0 20px;
+        }
+        
+        .mainDescription {
+            font-size: 1.6rem;
+            padding: 0 20px;
+        }
+        
+        .iphonePreview {
+            transform: scale(1);
+            margin-top: 20px;
         }
     }
     </style>
