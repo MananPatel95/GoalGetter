@@ -50,7 +50,7 @@ features:
 
   - title                                 : Widgets
     description                           : Insightful widgets available right on your Home Screen or Lock Screen
-    fontawesome_icon_name                 : watch
+    fontawesome_icon_name                 : mobile-alt
 
   - title                                 : Progress Insights
     description                           : Visualize your journey with detailed statistics and progress reports that keep you motivated and accountable.
