@@ -82,8 +82,9 @@
         position: relative;
         width: 100%;
         height: 100%;
-        border-radius: 32px;
+        border-radius: 40px;
         overflow: hidden;
+        -webkit-mask-image: -webkit-radial-gradient(white, black);
     }
 
     .screenshot {
@@ -94,14 +95,30 @@
         height: 100%;
         object-fit: cover;
         transition: opacity 0.5s ease-in-out;
-        border-radius: 40px;
-        -webkit-mask-image: -webkit-radial-gradient(white, black);
     }
 
     .videoContainer {
         border-radius: 40px;
         overflow: hidden;
         -webkit-mask-image: -webkit-radial-gradient(white, black);
+    }
+
+    @media only screen and (max-width: 768px) {
+        .screenshot-container,
+        .videoContainer {
+            border-radius: 25px; /* Smaller radius for mobile */
+        }
+        
+        .screenshot {
+            border-radius: 0; /* Remove individual screenshot radius on mobile */
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .screenshot-container,
+        .videoContainer {
+            border-radius: 18px; /* Even smaller radius for very small screens */
+        }
     }
     </style>
 </body>
