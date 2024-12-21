@@ -54,6 +54,39 @@
                         </div>
                     </div>
                     {% include features.html %}
+                    <div class="secondaryFeatures">
+                        <div class="featureGrid">
+                            <div class="featureCard">
+                                <div class="featureImage">
+                                    <img src="assets/features/homescreen.png" alt="Home Screen Features">
+                                </div>
+                                <div class="featureText">
+                                    <h3>On your iPhone's Home Screen.</h3>
+                                    <p>Keep track of your goals right from your home screen with our beautiful widgets.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="featureCard">
+                                <div class="featureImage">
+                                    <img src="assets/features/lockscreen.png" alt="Lock Screen Features">
+                                </div>
+                                <div class="featureText">
+                                    <h3>On your iPhone's Lock Screen.</h3>
+                                    <p>Stay on top of your progress with lock screen widgets - see your goals at a glance.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="featureCard">
+                                <div class="featureImage">
+                                    <img src="assets/features/ipad.png" alt="iPad Features">
+                                </div>
+                                <div class="featureText">
+                                    <h3>On your iPad.</h3>
+                                    <p>Take advantage of the larger screen with our specially designed iPad interface.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     {% include footer.html %}
                     {% include appstoreimages.html %}
                 </div>
@@ -102,6 +135,77 @@
         border-radius: 40px;
         overflow: hidden;
         -webkit-mask-image: -webkit-radial-gradient(white, black);
+    }
+
+    .secondaryFeatures {
+        padding: 80px 0;
+        background-color: #f8f8f8;
+        margin-top: 60px;
+    }
+
+    .featureGrid {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    .featureCard {
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .featureCard:hover {
+        transform: translateY(-5px);
+    }
+
+    .featureImage {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .featureImage img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .featureCard .featureText {
+        padding: 20px;
+    }
+
+    .featureCard h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .featureCard p {
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.5;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .featureGrid {
+            grid-template-columns: 1fr;
+            padding: 0 15px;
+        }
+        
+        .secondaryFeatures {
+            padding: 40px 0;
+        }
+        
+        .featureCard {
+            max-width: 400px;
+            margin: 0 auto;
+        }
     }
     </style>
 </body>
