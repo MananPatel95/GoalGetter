@@ -2,6 +2,11 @@
 layout: page
 title: Terms & Conditions
 include_in_header: false
+screenshots:
+  - 1.png
+  - 2.png
+  - 3.png
+  - 4.png
 ---
 ## Terms & Conditions  
 

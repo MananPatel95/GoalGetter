@@ -17,6 +17,41 @@
         </div>
         {% include appstoreimages.html %}
     </div>
+
+    <!-- Add this where you want the screenshots to appear -->
+    <div class="screenshot-container">
+        {% for screenshot in page.screenshots %}
+            <img src="assets/screenshot/{{ screenshot }}" class="screenshot" style="display: {% if forloop.first %}block{% else %}none{% endif %};">
+        {% endfor %}
+    </div>
+
+    <script>
+    let currentIndex = 0;
+    const screenshots = document.querySelectorAll('.screenshot');
+
+    function cycleScreenshots() {
+        screenshots[currentIndex].style.display = 'none';
+        currentIndex = (currentIndex + 1) % screenshots.length;
+        screenshots[currentIndex].style.display = 'block';
+    }
+
+    setInterval(cycleScreenshots, 3000); // Change image every 3 seconds
+    </script>
+
+    <style>
+    .screenshot-container {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .screenshot {
+        width: 100%;
+        height: auto;
+        transition: opacity 0.5s ease-in-out;
+    }
+    </style>
 </body>
 
 </html>
