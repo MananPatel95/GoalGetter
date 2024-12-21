@@ -50,7 +50,7 @@ features:
 
   - title                                 : Widgets
     description                           : Insightful widgets available right on your Home Screen or Lock Screen
-    fontawesome_icon_name                 : chart-line
+    fontawesome_icon_name                 : grid-2
 
   - title                                 : Progress Insights
     description                           : Visualize your journey with detailed statistics and progress reports that keep you motivated and accountable.
@@ -78,10 +78,10 @@ app_description_color                     : "#ffffff"
 feature_title_color                       : "#000000"
 feature_text_color                        : "#666666"
 
-feature_icons_foreground_color            : "#ffffff"
+feature_icons_foreground_color            : "#1d63ea"
 feature_icons_background_color            : "#e6e6e6"
 
-social_icons_foreground_color             : "#666666"
+social_icons_foreground_color             : "#1d63ea"
 social_icons_background_color             : "#e6e6e6"
 
 footer_text_color                         : "#666666"
