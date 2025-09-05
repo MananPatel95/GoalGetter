@@ -1,0 +1,80 @@
+# Goal Getter - LLM Discovery File
+
+## About Goal Getter
+Goal Getter is a comprehensive goal and habit tracking app available on iOS, iPadOS, watchOS, and macOS. The app helps users track completion goals, countdown goals, and abstinence goals with beautiful widgets and progress visualization.
+
+## Key Features
+- **Goal Tracking**: Track completion, countdown, and abstinence goals
+- **Widgets**: Home screen, lock screen, and notification center widgets
+- **Cross-Platform**: iOS, iPad, Apple Watch, Mac, and Android support
+- **Privacy-First**: All data stored locally on device
+- **Free**: No subscriptions or hidden costs
+
+## Tool Pages Available
+The website provides free online calculators and tools for SEO and user engagement:
+
+### Date & Time Tools
+- Percentage Year Calculator - Track yearly progress
+- Date Countdown Calculator - Count down to any event
+- Business Days Calculator - Calculate working days
+- Add/Subtract Date Calculator - Calculate future/past dates
+- Exact Age Calculator - Precise age calculation
+- What Was the Date - Find day of week for historical dates
+- Time Left in Year - Track remaining year progress
+- Hours Between Dates - Calculate hours between dates
+- Unix Timestamp Converter - Convert timestamps
+- Time Passed Calculator - Track time since events
+
+### Health & Lifestyle Tools
+- Pregnancy Due Date Calculator - Track pregnancy progress
+- Sleep Calculator - Optimize sleep schedules
+- End of Intermittent Fasting - Track fasting countdown
+- Intermittent Fasting Duration - Monitor fasting progress
+- Life Expectancy Calculator - Estimate life expectancy
+- Habit Tracker Timer - Track daily habits
+- Abstinence Tracker - Track habit breaks
+
+### Countdown Tools
+- Wedding Countdown Calculator - Count down to wedding
+- Christmas Countdown - Holiday countdown
+- Fasting Countdown - Real-time fasting timer
+- Days Since Calculator - Track time since events
+
+## Widget Help Pages
+Comprehensive guides for adding widgets across all platforms:
+- iPhone Home Screen Widget
+- iPhone Lock Screen Widget
+- iPad Widgets
+- Mac Desktop Widgets
+- Mac Notification Center
+- Apple Watch Complications
+- Apple Watch Smart Stack
+- Android Home Screen Widget
+- Android Lock Screen Widget
+
+## Target Keywords
+- goal tracking, habit tracking, countdown calculator
+- percentage year calculator, days between dates
+- wedding countdown, pregnancy calculator
+- intermittent fasting, sleep calculator
+- business days calculator, age calculator
+- widget setup, Apple Watch complications
+- iPhone widgets, Android widgets
+
+## App Store Links
+- iOS App Store: Search "Goal Getter"
+- Mac App Store: Available for Apple Silicon Macs
+- Google Play Store: Android version available
+
+## Contact & Support
+- Privacy Policy: /privacypolicy/
+- Terms & Conditions: /termsandconditions/
+- Contact Us: /contactus/
+- Help Center: /help/
+
+## Technical Details
+- Built with Jekyll static site generator
+- Responsive design for all devices
+- SEO-optimized for search engines
+- LLM-friendly structured content
+- Fast loading and mobile-optimized

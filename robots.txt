@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://goalgetter.app/sitemap.xml
+
+# Allow all crawlers to access all content
+Disallow:
+
+# Specific pages to prioritize
+Allow: /tools/
+Allow: /help/
+Allow: /countdowns/
+
+# LLM-friendly content
+Allow: /llm.txt

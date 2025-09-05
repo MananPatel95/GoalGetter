@@ -1,67 +1,164 @@
-<footer>
-	<div class="footerIcons">
+<footer class="seo-footer">
+	<div class="footer-content">
+		<!-- Brand Section -->
+		<div class="footer-brand">
+			<div class="footer-logo">
+				<img src="{{ site.app_icon | relative_url }}" alt="Goal Getter" class="footer-app-icon">
+				<span class="footer-app-name">Goal Getter</span>
+			</div>
+			<div class="footer-social">
+				{% if site.facebook_username %}
+					<a href="https://facebook.com/{{ site.facebook_username }}" aria-label="Facebook">
+						<span class="fa-stack fa-1x">
+							<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
+							<i class="socialIconTop fab fa-facebook fa-stack-1x"></i>
+						</span>
+					</a>
+				{% endif %}
 
-		{% if site.facebook_username %}
-			<a href="https://facebook.com/{{ site.facebook_username }}">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fab fa-facebook fa-stack-1x"></i>
-				</span>
-			</a>
-		{% endif %}
+				{% if site.twitter_username %}
+					<a href="https://twitter.com/{{ site.twitter_username }}" aria-label="Twitter">
+						<span class="fa-stack fa-1x">
+							<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
+							<i class="socialIconTop fab fa-twitter fa-stack-1x"></i>
+						</span>
+					</a>
+				{% endif %}
 
-		{% if site.twitter_username %}
-			<a href="https://twitter.com/{{ site.twitter_username }}">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fab fa-twitter fa-stack-1x"></i>
-				</span>
-			</a>
-		{% endif %}
+				{% if site.instagram_username %}
+					<a href="https://instagram.com/{{ site.instagram_username }}" aria-label="Instagram">
+						<span class="fa-stack fa-1x">
+							<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
+							<i class="socialIconTop fab fa-instagram fa-stack-1x"></i>
+						</span>
+					</a>
+				{% endif %}
+			</div>
+			<div class="app-badge">
+				<div class="badge-content">
+					<span class="badge-text">APP OF THE DAY</span>
+					<span class="badge-subtitle">+160 countries</span>
+				</div>
+			</div>
+		</div>
 
-		{% if site.instagram_username %}
-			<a href="https://instagram.com/{{ site.instagram_username }}">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fab fa-instagram fa-stack-1x"></i>
-				</span>
-			</a>
-		{% endif %}
+		<!-- Help & FAQs Section -->
+		<div class="footer-section">
+			<h3 class="footer-section-title">Help & FAQs</h3>
+			<ul class="footer-links-list">
+				<li><a href="/help/ios-mac-faq">FAQs - iOS and Mac</a></li>
+				<li><a href="/help/android-faq">FAQs - Android</a></li>
+			</ul>
+		</div>
 
-		{% if site.mastodon_link %}
-			<a rel="me" href="{{ site.mastodon_link }}">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fab fa-mastodon fa-stack-1x"></i>
-				</span>
-			</a>
-		{% endif %}
+		<!-- iPhone Widgets Section -->
+		<div class="footer-section">
+			<h3 class="footer-section-title">iPhone</h3>
+			<ul class="footer-links-list">
+				<li><a href="/help/iphone-home-screen-widget">How to add a Goal widget on your iPhone's Home Screen</a></li>
+				<li><a href="/help/iphone-lock-screen-widget">How to add a Goal widget on your iPhone's Lock Screen</a></li>
+			</ul>
+		</div>
 
-		{% if site.github_username %}
-			<a href="https://github.com/{{ site.github_username }}">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fab fa-github fa-stack-1x"></i>
-				</span>
-			</a>
-		{% endif %}
+		<!-- iPad Widgets Section -->
+		<div class="footer-section">
+			<h3 class="footer-section-title">iPad</h3>
+			<ul class="footer-links-list">
+				<li><a href="/help/ipad-home-screen-widget">How to add a Goal widget on your iPad's Home Screen</a></li>
+				<li><a href="/help/ipad-lock-screen-widget">How to add a Goal widget on your iPad's Lock Screen</a></li>
+			</ul>
+		</div>
 
-		{% if site.email_address %}
-			<a href="mailto:{{ site.email_address }}">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fas fa-envelope fa-stack-1x"></i>
-				</span>
-			</a>
-		{% endif %}
+		<!-- Apple Watch Widgets Section -->
+		<div class="footer-section">
+			<h3 class="footer-section-title">Apple Watch</h3>
+			<ul class="footer-links-list">
+				<li><a href="/help/apple-watch-smart-stack">How to add a Goal widget on your Apple Watch Smart Stack</a></li>
+				<li><a href="/help/apple-watch-complications">How to add a Goal widget on your Apple Watch Complications</a></li>
+			</ul>
+		</div>
 
+		<!-- Mac Widgets Section -->
+		<div class="footer-section">
+			<h3 class="footer-section-title">Mac</h3>
+			<ul class="footer-links-list">
+				<li><a href="/help/mac-notification-center">How to add a Goal widget on your Mac's Notification Center</a></li>
+				<li><a href="/help/mac-desktop-widget">How to add a Goal widget on your Mac's Desktop</a></li>
+			</ul>
+		</div>
+
+		<!-- Android Widgets Section -->
+		<div class="footer-section">
+			<h3 class="footer-section-title">Android</h3>
+			<ul class="footer-links-list">
+				<li><a href="/help/android-home-screen-widget">How to add a Goal widget on your Android's Home Screen</a></li>
+				<li><a href="/help/android-lock-screen-widget">How to add a Goal widget on your Android's Lock Screen</a></li>
+			</ul>
+		</div>
+
+		<!-- Tools Section -->
+		<div class="footer-section tools-section">
+			<h3 class="footer-section-title">Tools</h3>
+			<div class="tools-grid">
+				<ul class="footer-links-list">
+					<li><a href="/tools/percentage-year-calculator">Percentage year calculator</a></li>
+					<li><a href="/tools/date-countdown-calculator">Date countdown calculator</a></li>
+					<li><a href="/tools/business-days-calculator">Business days calculator</a></li>
+					<li><a href="/tools/wedding-countdown-calculator">Wedding countdown calculator</a></li>
+					<li><a href="/tools/days-since-calculator">Days since calculator</a></li>
+					<li><a href="/tools/habit-tracker-timer">Habit tracker timer</a></li>
+					<li><a href="/tools/goal-progress-calculator">Goal progress calculator</a></li>
+					<li><a href="/tools/abstinence-tracker">Abstinence tracker</a></li>
+				</ul>
+				<ul class="footer-links-list">
+					<li><a href="/tools/add-subtract-date">Add to or subtract from a date</a></li>
+					<li><a href="/tools/exact-age-calculator">Exact age calculator</a></li>
+					<li><a href="/tools/what-was-the-date">What was the date</a></li>
+					<li><a href="/tools/time-left-in-year">Time left in the year</a></li>
+					<li><a href="/tools/days-between-dates">Days between two dates</a></li>
+					<li><a href="/tools/hours-between-dates">Hours between two dates</a></li>
+					<li><a href="/tools/unix-timestamp-converter">Unix timestamp converter</a></li>
+					<li><a href="/tools/time-passed-calculator">Time passed calculator</a></li>
+				</ul>
+				<ul class="footer-links-list">
+					<li><a href="/tools/christmas-countdown">Christmas countdown</a></li>
+					<li><a href="/tools/new-year-countdown">New Year countdown</a></li>
+					<li><a href="/tools/birthday-countdown">Birthday countdown</a></li>
+					<li><a href="/tools/anniversary-countdown">Anniversary countdown</a></li>
+					<li><a href="/tools/retirement-countdown">Retirement countdown</a></li>
+					<li><a href="/tools/vacation-countdown">Vacation countdown</a></li>
+					<li><a href="/tools/graduation-countdown">Graduation countdown</a></li>
+					<li><a href="/tools/pregnancy-due-date">Pregnancy due date calculator</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Countdowns Section -->
+		<div class="footer-section">
+			<h3 class="footer-section-title">Popular Countdowns</h3>
+			<ul class="footer-links-list">
+				<li><a href="/countdowns/wedding-day">Wedding day countdown</a></li>
+				<li><a href="/countdowns/christmas">Christmas countdown</a></li>
+				<li><a href="/countdowns/new-year">New Year countdown</a></li>
+				<li><a href="/countdowns/birthday">Birthday countdown</a></li>
+				<li><a href="/countdowns/anniversary">Anniversary countdown</a></li>
+			</ul>
+		</div>
 	</div>
-	<div class="footerLinks">
-		{% for page in site.pages %}
-			<a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a>
-		{% endfor %}
-		{% if site.presskit_download_link %}
-			<a href="{{ site.presskit_download_link }}">Press Kit</a>
-		{% endif %}
+
+	<!-- Copyright Section -->
+	<div class="footer-copyright">
+		<div class="copyright-text">
+			© 2024 Goal Getter. All rights reserved.
+		</div>
+		<div class="footer-legal-links">
+			{% for page in site.pages %}
+				<a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a>
+				{% unless forloop.last %} • {% endunless %}
+			{% endfor %}
+			{% if site.presskit_download_link %}
+				• <a href="{{ site.presskit_download_link }}">Press Kit</a>
+			{% endif %}
+		</div>
 	</div>
 </footer>
