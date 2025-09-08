@@ -256,7 +256,7 @@ nav > ul li a:active {
 	top: auto !important;
 	left: auto !important;
 	right: auto !important;
-	background: white;
+	background: white !important;
 	border-radius: 12px;
 	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 	padding: 20px;
@@ -284,7 +284,7 @@ nav > ul li a:active {
 .resources-dropdown-section h4 {
 	font-size: 1.1rem;
 	font-weight: 600;
-	color: #2c3e50;
+	color: #2c3e50 !important;
 	margin: 0 0 12px 0;
 	padding-bottom: 6px;
 	border-bottom: 2px solid #e9ecef;
@@ -305,7 +305,7 @@ nav > ul li a:active {
 
 .tools-dropdown-section ul li a,
 .resources-dropdown-section ul li a {
-	color: #5a6c7d;
+	color: #2c3e50 !important;
 	text-decoration: none;
 	font-size: 0.9rem;
 	line-height: 1.4;
@@ -316,7 +316,28 @@ nav > ul li a:active {
 
 .tools-dropdown-section ul li a:hover,
 .resources-dropdown-section ul li a:hover {
-	color: #667eea;
+	color: #667eea !important;
+}
+
+// Ensure all text in dropdowns is visible
+.tools-dropdown-menu,
+.resources-dropdown-menu {
+	color: #2c3e50 !important;
+}
+
+.tools-dropdown-menu *,
+.resources-dropdown-menu * {
+	color: inherit !important;
+}
+
+.tools-dropdown-section ul li a,
+.resources-dropdown-section ul li a {
+	color: #2c3e50 !important;
+}
+
+.tools-dropdown-section h4,
+.resources-dropdown-section h4 {
+	color: #2c3e50 !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -773,7 +794,7 @@ footer {
 	overflow: hidden;
 	border-radius: 20px 20px 0 0;
 	margin: 40px 20px 0 20px;
-	border: 1px solid #e9ecef;
+	border: 2px solid #e9ecef;
 }
 
 .footer-content {
