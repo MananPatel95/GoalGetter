@@ -252,15 +252,17 @@ nav > ul li a:active {
 
 .tools-dropdown-menu,
 .resources-dropdown-menu {
-	position: absolute;
-	top: 100%;
-	left: 0;
+	position: fixed !important;
+	top: auto !important;
+	left: auto !important;
+	right: auto !important;
 	background: white;
 	border-radius: 12px;
 	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 	padding: 20px;
 	min-width: 500px;
-	z-index: 99999;
+	max-width: 90vw;
+	z-index: 999999 !important;
 	opacity: 0;
 	visibility: hidden;
 	transform: translateY(-10px);
@@ -321,8 +323,20 @@ nav > ul li a:active {
 	.tools-dropdown-menu,
 	.resources-dropdown-menu {
 		min-width: 300px;
+		max-width: 95vw;
 		grid-template-columns: 1fr;
 		left: -50px;
+	}
+}
+
+// Additional responsive positioning
+@media only screen and (max-width: 480px) {
+	.tools-dropdown-menu,
+	.resources-dropdown-menu {
+		min-width: 280px;
+		max-width: 98vw;
+		left: -30px;
+		padding: 15px;
 	}
 }
 

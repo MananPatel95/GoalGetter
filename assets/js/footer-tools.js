@@ -83,6 +83,14 @@ function toggleToolsDropdown(event) {
 	if (resourcesDropdown.classList.contains('active')) {
 		resourcesDropdown.classList.remove('active');
 	}
+	
+	// Position dropdown to avoid viewport cutoff
+	if (dropdown.classList.contains('active')) {
+		// Small delay to ensure dropdown is fully rendered
+		setTimeout(() => {
+			positionDropdown(dropdown);
+		}, 10);
+	}
 }
 
 function toggleResourcesDropdown(event) {
@@ -95,6 +103,70 @@ function toggleResourcesDropdown(event) {
 	if (toolsDropdown.classList.contains('active')) {
 		toolsDropdown.classList.remove('active');
 	}
+	
+	// Position dropdown to avoid viewport cutoff
+	if (dropdown.classList.contains('active')) {
+		// Small delay to ensure dropdown is fully rendered
+		setTimeout(() => {
+			positionDropdown(dropdown);
+		}, 10);
+	}
+}
+
+// Position dropdown to avoid viewport cutoff
+function positionDropdown(dropdown) {
+	const dropdownMenu = dropdown.querySelector('.tools-dropdown-menu, .resources-dropdown-menu');
+	if (!dropdownMenu) return;
+	
+	// Get dropdown trigger and viewport dimensions
+	const dropdownRect = dropdown.getBoundingClientRect();
+	const menuRect = dropdownMenu.getBoundingClientRect();
+	const viewportWidth = window.innerWidth;
+	const viewportHeight = window.innerHeight;
+	
+	// Calculate position relative to viewport (since we're using position: fixed)
+	let left = dropdownRect.left;
+	let top = dropdownRect.bottom + 10; // 10px gap below trigger
+	
+	// Check if dropdown extends beyond right edge of viewport
+	if (left + menuRect.width > viewportWidth) {
+		left = viewportWidth - menuRect.width - 10; // 10px margin from edge
+	}
+	
+	// Check if dropdown extends beyond bottom edge of viewport
+	if (top + menuRect.height > viewportHeight) {
+		top = dropdownRect.top - menuRect.height - 10; // Position above trigger
+	}
+	
+	// Ensure dropdown doesn't go off the left edge
+	if (left < 10) {
+		left = 10;
+	}
+	
+	// On mobile, center the dropdown if it's too wide
+	if (window.innerWidth <= 768) {
+		left = (viewportWidth - menuRect.width) / 2;
+		if (left < 10) left = 10;
+	}
+	
+	// Apply positioning
+	dropdownMenu.style.setProperty('left', `${left}px`, 'important');
+	dropdownMenu.style.setProperty('top', `${top}px`, 'important');
+	dropdownMenu.style.setProperty('right', 'auto', 'important');
+	dropdownMenu.style.setProperty('bottom', 'auto', 'important');
+	dropdownMenu.style.setProperty('transform', 'translateY(0)', 'important');
+	
+	// Debug logging
+	console.log('Dropdown positioned:', {
+		viewportWidth,
+		viewportHeight,
+		dropdownLeft: dropdownRect.left,
+		dropdownBottom: dropdownRect.bottom,
+		menuWidth: menuRect.width,
+		menuHeight: menuRect.height,
+		calculatedLeft: left,
+		calculatedTop: top
+	});
 }
 
 // Close dropdowns when clicking outside
@@ -157,3 +229,16 @@ function addTooltips() {
 
 // Initialize tooltips when DOM is ready
 document.addEventListener('DOMContentLoaded', addTooltips);
+
+// Reposition dropdowns on window resize
+window.addEventListener('resize', function() {
+	const activeToolsDropdown = document.querySelector('.tools-dropdown.active');
+	const activeResourcesDropdown = document.querySelector('.resources-dropdown.active');
+	
+	if (activeToolsDropdown) {
+		positionDropdown(activeToolsDropdown);
+	}
+	if (activeResourcesDropdown) {
+		positionDropdown(activeResourcesDropdown);
+	}
+});
