@@ -37,6 +37,24 @@ Count down to Christmas with our free countdown timer. See days, hours, minutes,
     <p style="color: #5a6c7d; font-size: 1.4rem;">Count down to the most wonderful time of the year</p>
   </div>
   
+  <div class="calculator-inputs" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <label for="christmasYear" style="display: block; font-weight: 600; color: #2c3e50; margin-bottom: 8px;">Select Christmas Year</label>
+      <select id="christmasYear" style="padding: 12px; border: 2px solid #e9ecef; border-radius: 8px; font-size: 1.1rem; min-width: 200px;" onchange="updateCountdown()">
+        <!-- Years will be populated by JavaScript -->
+      </select>
+    </div>
+    
+    <div style="text-align: center;">
+      <button onclick="setToCurrentYear()" style="background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1.4rem; font-weight: 600; cursor: pointer; transition: transform 0.3s ease; margin-right: 10px;">
+        Current Year
+      </button>
+      <button onclick="setToNextYear()" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1.4rem; font-weight: 600; cursor: pointer; transition: transform 0.3s ease;">
+        Next Year
+      </button>
+    </div>
+  </div>
+  
   <div class="countdown-display" style="text-align: center; padding: 30px; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
     <div id="countdownResult" style="font-size: 2.4rem; font-weight: 700; color: #2c3e50; margin-bottom: 20px;">
       Loading countdown...
@@ -107,15 +125,10 @@ function updateCountdown() {
   if (isPaused) return;
   
   const now = new Date();
-  const currentYear = now.getFullYear();
+  const selectedYear = parseInt(document.getElementById('christmasYear').value);
   
-  // Get Christmas Day for current year
-  let christmas = new Date(currentYear, 11, 25); // December 25th
-  
-  // If Christmas has passed this year, get next year's Christmas
-  if (now > christmas) {
-    christmas = new Date(currentYear + 1, 11, 25);
-  }
+  // Get Christmas Day for selected year
+  const christmas = new Date(selectedYear, 11, 25); // December 25th
   
   const timeDiff = christmas - now;
   
@@ -133,7 +146,7 @@ function updateCountdown() {
   const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
   
   // Update display
-  document.getElementById('countdownResult').innerHTML = `Time until Christmas:`;
+  document.getElementById('countdownResult').innerHTML = `Time until Christmas ${selectedYear}:`;
   
   const countdownBoxes = `
     <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
@@ -190,8 +203,40 @@ function shareCountdown() {
   }
 }
 
+function setToCurrentYear() {
+  const currentYear = new Date().getFullYear();
+  document.getElementById('christmasYear').value = currentYear;
+  updateCountdown();
+}
+
+function setToNextYear() {
+  const nextYear = new Date().getFullYear() + 1;
+  document.getElementById('christmasYear').value = nextYear;
+  updateCountdown();
+}
+
+function populateYearDropdown() {
+  const currentYear = new Date().getFullYear();
+  const yearSelect = document.getElementById('christmasYear');
+  
+  // Clear existing options
+  yearSelect.innerHTML = '';
+  
+  // Add years from current year to 10 years in the future
+  for (let year = currentYear; year <= currentYear + 10; year++) {
+    const option = document.createElement('option');
+    option.value = year;
+    option.textContent = year;
+    yearSelect.appendChild(option);
+  }
+  
+  // Set default to current year
+  yearSelect.value = currentYear;
+}
+
 // Initialize countdown
 window.onload = function() {
+  populateYearDropdown();
   startCountdown();
 };
 </script>

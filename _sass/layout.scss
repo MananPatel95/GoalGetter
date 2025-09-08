@@ -38,6 +38,7 @@
 	max-width: $content-width;
 	padding-left: 15px;
 	padding-right: 15px;
+	overflow: visible;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: 115px 876px auto auto;
 	grid-column-gap: 30px;
@@ -95,6 +96,8 @@ header {
 	grid-area: h;
 	display: flex;
 	margin-right: -15px;
+	overflow: visible;
+	z-index: 1000;
 }
 
 .logo {
@@ -185,7 +188,9 @@ nav > ul {
 	color: #fff;
 	display: flex;
 	list-style-type: none;
-
+	overflow: visible;
+	position: relative;
+	z-index: 1001;
 }
 
 nav > ul li {
@@ -255,7 +260,7 @@ nav > ul li a:active {
 	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 	padding: 20px;
 	min-width: 500px;
-	z-index: 9999;
+	z-index: 99999;
 	opacity: 0;
 	visibility: hidden;
 	transform: translateY(-10px);
@@ -749,14 +754,12 @@ footer {
 	grid-area: f;
 	background: #ffffff;
 	padding: 60px 0 40px;
-	width: 100%;
+	width: calc(100% - 40px);
 	position: relative;
 	overflow: hidden;
 	border-radius: 20px 20px 0 0;
-	margin-top: 40px;
-	margin-left: 20px;
-	margin-right: 20px;
-	width: calc(100% - 40px);
+	margin: 40px 20px 0 20px;
+	border: 1px solid #e9ecef;
 }
 
 .footer-content {
@@ -974,6 +977,8 @@ footer {
 	z-index: 2;
 	gap: 15px;
 	text-align: center;
+	grid-column: 1 / -1;
+	width: 100%;
 }
 
 .copyright-text {
@@ -1044,6 +1049,8 @@ footer {
 		text-align: center;
 		margin-top: 30px;
 		align-items: center;
+		grid-column: 1 / -1;
+		width: 100%;
 	}
 }
 
@@ -1085,6 +1092,8 @@ footer {
 	.footer-copyright {
 		margin-top: 20px;
 		padding: 20px 15px 0;
+		grid-column: 1 / -1;
+		width: 100%;
 	}
 	
 	.copyright-text {
