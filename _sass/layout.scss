@@ -647,27 +647,19 @@ footer {
 // New SEO Footer Styles - Goal Getter Design
 .seo-footer {
 	grid-area: f;
-	background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-	padding: 80px 0 40px;
+	background: #ffffff;
+	padding: 60px 0 40px;
 	width: 100%;
 	position: relative;
 	overflow: hidden;
-}
-
-.seo-footer::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: 4px;
-	background: linear-gradient(90deg, #4ecdc4 0%, #44a08d 25%, #667eea 50%, #764ba2 75%, #f093fb 100%);
+	border-radius: 20px 20px 0 0;
+	box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .footer-content {
 	display: grid;
 	grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 3fr 1fr;
-	gap: 50px;
+	gap: 40px;
 	max-width: $content-width;
 	margin: 0 auto;
 	padding: 0 20px;
@@ -678,7 +670,7 @@ footer {
 .footer-brand {
 	display: flex;
 	flex-direction: column;
-	gap: 25px;
+	gap: 20px;
 }
 
 .footer-logo {
@@ -766,11 +758,11 @@ footer {
 .footer-section {
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 15px;
 }
 
 .footer-section-title {
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	font-weight: 700;
 	color: #2c3e50;
 	margin: 0;
@@ -795,7 +787,7 @@ footer {
 	padding: 0;
 	display: flex;
 	flex-direction: column;
-	gap: 12px;
+	gap: 8px;
 }
 
 .footer-links-list li {
@@ -806,8 +798,8 @@ footer {
 .footer-links-list a {
 	color: #5a6c7d;
 	text-decoration: none;
-	font-size: 1.4rem;
-	line-height: 1.5;
+	font-size: 1.2rem;
+	line-height: 1.4;
 	transition: all 0.3s ease;
 	padding: 4px 0;
 	position: relative;
@@ -841,7 +833,7 @@ footer {
 .tools-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 25px;
+	gap: 20px;
 }
 
 .footer-copyright {
@@ -849,7 +841,7 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	max-width: $content-width;
-	margin: 60px auto 0;
+	margin: 40px auto 0;
 	padding: 30px 20px 0;
 	border-top: 2px solid #e9ecef;
 	position: relative;
@@ -883,7 +875,7 @@ footer {
 @media only screen and (max-width: 1200px) {
 	.footer-content {
 		grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
-		gap: 40px;
+		gap: 30px;
 	}
 	
 	.tools-section {
@@ -897,12 +889,12 @@ footer {
 
 @media only screen and (max-width: 992px) {
 	.seo-footer {
-		padding: 60px 0 30px;
+		padding: 50px 0 30px;
 	}
 	
 	.footer-content {
 		grid-template-columns: 1fr 1fr 1fr;
-		gap: 35px;
+		gap: 25px;
 	}
 	
 	.footer-brand {
@@ -922,18 +914,18 @@ footer {
 		flex-direction: column;
 		gap: 20px;
 		text-align: center;
-		margin-top: 40px;
+		margin-top: 30px;
 	}
 }
 
 @media only screen and (max-width: 768px) {
 	.seo-footer {
-		padding: 50px 0 25px;
+		padding: 40px 0 20px;
 	}
 	
 	.footer-content {
 		grid-template-columns: 1fr;
-		gap: 30px;
+		gap: 20px;
 		padding: 0 15px;
 	}
 	
@@ -954,24 +946,24 @@ footer {
 	}
 	
 	.footer-section-title {
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 	}
 	
 	.footer-links-list a {
-		font-size: 1.3rem;
+		font-size: 1.1rem;
 	}
 	
 	.footer-copyright {
-		margin-top: 30px;
+		margin-top: 20px;
 		padding: 20px 15px 0;
 	}
 	
 	.copyright-text {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 	}
 	
 	.footer-legal-links a {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 	}
 }
 
