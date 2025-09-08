@@ -33,13 +33,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const internalLinks = document.querySelectorAll('a[href^="#"]');
     internalLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+            const href = this.getAttribute('href');
+            // Only prevent default and scroll if href is not just '#'
+            if (href && href !== '#') {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
             }
         });
     });
@@ -76,11 +80,16 @@ function formatNumber(num) {
 function toggleToolsDropdown(event) {
 	event.preventDefault();
 	const dropdown = event.target.closest('.tools-dropdown');
+	if (!dropdown) {
+		console.warn('Tools dropdown not found');
+		return;
+	}
+	
 	dropdown.classList.toggle('active');
 	
 	// Close resources dropdown if open
 	const resourcesDropdown = document.querySelector('.resources-dropdown');
-	if (resourcesDropdown.classList.contains('active')) {
+	if (resourcesDropdown && resourcesDropdown.classList.contains('active')) {
 		resourcesDropdown.classList.remove('active');
 	}
 	
@@ -96,11 +105,16 @@ function toggleToolsDropdown(event) {
 function toggleResourcesDropdown(event) {
 	event.preventDefault();
 	const dropdown = event.target.closest('.resources-dropdown');
+	if (!dropdown) {
+		console.warn('Resources dropdown not found');
+		return;
+	}
+	
 	dropdown.classList.toggle('active');
 	
 	// Close tools dropdown if open
 	const toolsDropdown = document.querySelector('.tools-dropdown');
-	if (toolsDropdown.classList.contains('active')) {
+	if (toolsDropdown && toolsDropdown.classList.contains('active')) {
 		toolsDropdown.classList.remove('active');
 	}
 	
@@ -116,13 +130,22 @@ function toggleResourcesDropdown(event) {
 // Position dropdown to avoid viewport cutoff
 function positionDropdown(dropdown) {
 	const dropdownMenu = dropdown.querySelector('.tools-dropdown-menu, .resources-dropdown-menu');
-	if (!dropdownMenu) return;
+	if (!dropdownMenu) {
+		console.warn('Dropdown menu not found');
+		return;
+	}
 	
 	// Get dropdown trigger and viewport dimensions
 	const dropdownRect = dropdown.getBoundingClientRect();
 	const menuRect = dropdownMenu.getBoundingClientRect();
 	const viewportWidth = window.innerWidth;
 	const viewportHeight = window.innerHeight;
+	
+	// Validate dimensions
+	if (!dropdownRect || !menuRect || viewportWidth <= 0 || viewportHeight <= 0) {
+		console.warn('Invalid dimensions for dropdown positioning');
+		return;
+	}
 	
 	// Calculate position relative to viewport (since we're using position: fixed)
 	let left = dropdownRect.left;
@@ -173,6 +196,10 @@ function positionDropdown(dropdown) {
 document.addEventListener('click', function(event) {
 	const toolsDropdown = document.querySelector('.tools-dropdown');
 	const resourcesDropdown = document.querySelector('.resources-dropdown');
+	
+	if (!toolsDropdown || !resourcesDropdown) {
+		return;
+	}
 	
 	const isClickInsideTools = toolsDropdown.contains(event.target);
 	const isClickInsideResources = resourcesDropdown.contains(event.target);
@@ -236,9 +263,17 @@ window.addEventListener('resize', function() {
 	const activeResourcesDropdown = document.querySelector('.resources-dropdown.active');
 	
 	if (activeToolsDropdown) {
-		positionDropdown(activeToolsDropdown);
+		try {
+			positionDropdown(activeToolsDropdown);
+		} catch (error) {
+			console.warn('Error repositioning tools dropdown:', error);
+		}
 	}
 	if (activeResourcesDropdown) {
-		positionDropdown(activeResourcesDropdown);
+		try {
+			positionDropdown(activeResourcesDropdown);
+		} catch (error) {
+			console.warn('Error repositioning resources dropdown:', error);
+		}
 	}
 });
