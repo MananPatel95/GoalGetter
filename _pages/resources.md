@@ -2,8 +2,8 @@
 layout: page
 title: Resources
 permalink: /resources/
-description: Help guides, FAQs, and resources for Goal Getter app. Learn how to use widgets on iPhone, iPad, Apple Watch, Mac, and Android.
-keywords: help, guides, FAQ, widgets, iPhone, iPad, Apple Watch, Mac, Android, support
+description: Help guides, FAQs, and resources for Goal Getter app. Learn how to use widgets on iPhone, iPad, Mac, and Android.
+keywords: help, guides, FAQ, widgets, iPhone, iPad, Mac, Android, support
 include_in_header: true
 ---
 
@@ -18,8 +18,6 @@ Everything you need to know about using Goal Getter and setting up widgets on yo
 - [iPhone Home Screen Widget](/help/iphone-home-screen-widget) - How to add widgets to your iPhone
 - [iPhone Lock Screen Widget](/help/iphone-lock-screen-widget) - How to add widgets to your iPhone lock screen
 - [iPad Widgets](/help/ipad-widgets) - How to add widgets to your iPad
-- [Apple Watch Smart Stack](/help/apple-watch-smart-stack) - How to add widgets to your Apple Watch
-- [Apple Watch Complications](/help/apple-watch-complications) - How to add complications to your Apple Watch
 - [Mac Desktop Widgets](/help/mac-desktop-widgets) - How to add widgets to your Mac desktop
 - [Mac Notification Center](/help/mac-notification-center) - How to add widgets to Mac Notification Center
 
@@ -53,7 +51,6 @@ Everything you need to know about using Goal Getter and setting up widgets on yo
 - Choose from different widget sizes
 - Customize colors and styles
 - Set up multiple widgets for different goals
-- Use complications on Apple Watch for quick access
 
 ## Contact & Support
 
@@ -82,7 +79,7 @@ Stay updated with the latest features and improvements:
     "@type": "SoftwareApplication",
     "name": "Goal Getter",
     "applicationCategory": "ProductivityApplication",
-    "operatingSystem": ["iOS", "iPadOS", "watchOS", "macOS", "Android"],
+    "operatingSystem": ["iOS", "iPadOS", "macOS", "Android"],
     "offers": {
       "@type": "Offer",
       "price": "0",

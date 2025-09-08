@@ -74,7 +74,6 @@ New changes for you:
 - English language only (more languages coming soon)
 - No data export feature yet
 - Limited widget support (coming in next update)
-- No Apple Watch app (planned for future)
 
 ## Upcoming Features
 - Different Widgets, support for quick tracking

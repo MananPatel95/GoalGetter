@@ -14,7 +14,6 @@ Get answers to common questions about using Goal Getter on iOS and Mac devices.
 Goal Getter works on:
 - iPhone (iOS 14.0 or later)
 - iPad (iPadOS 14.0 or later)
-- Apple Watch (watchOS 7.0 or later)
 - Mac (macOS 11.0 or later with Apple Silicon)
 
 ### Is Goal Getter free?

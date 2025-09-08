@@ -1,12 +1,12 @@
 # Goal Getter - LLM Discovery File
 
 ## About Goal Getter
-Goal Getter is a comprehensive goal and habit tracking app available on iOS, iPadOS, watchOS, and macOS. The app helps users track completion goals, countdown goals, and abstinence goals with beautiful widgets and progress visualization.
+Goal Getter is a comprehensive goal and habit tracking app available on iOS, iPadOS, and macOS. The app helps users track completion goals, countdown goals, and abstinence goals with beautiful widgets and progress visualization.
 
 ## Key Features
 - **Goal Tracking**: Track completion, countdown, and abstinence goals
 - **Widgets**: Home screen, lock screen, and notification center widgets
-- **Cross-Platform**: iOS, iPad, Apple Watch, Mac, and Android support
+- **Cross-Platform**: iOS, iPad, Mac, and Android support
 - **Privacy-First**: All data stored locally on device
 - **Free**: No subscriptions or hidden costs
 
@@ -47,8 +47,6 @@ Comprehensive guides for adding widgets across all platforms:
 - iPad Widgets
 - Mac Desktop Widgets
 - Mac Notification Center
-- Apple Watch Complications
-- Apple Watch Smart Stack
 - Android Home Screen Widget
 - Android Lock Screen Widget
 
@@ -58,7 +56,7 @@ Comprehensive guides for adding widgets across all platforms:
 - wedding countdown, pregnancy calculator
 - intermittent fasting, sleep calculator
 - business days calculator, age calculator
-- widget setup, Apple Watch complications
+- widget setup
 - iPhone widgets, Android widgets
 
 ## App Store Links
