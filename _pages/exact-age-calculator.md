@@ -67,7 +67,7 @@ Calculate your exact age in years, months, days, hours, and minutes. Get precise
     <button onclick="setToBirthday()" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1.4rem; font-weight: 600; cursor: pointer; margin-right: 10px;">
       My Birthday
     </button>
-    <button onclick="setToNewYear()" style="background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1.4rem; font-weight: 600; cursor: pointer;">
+    <button onclick="setToNewYear()" style="background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1.4rem; font-weight: 600; cursor: pointer;">
       New Year
     </button>
   </div>
@@ -162,11 +162,11 @@ function calculateExactAge() {
       </div>
       <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
         <div style="font-weight: 600; color: #2c3e50;">Days</div>
-        <div style="font-size: 2rem; font-weight: 700; color: #ff6b6b;">${days}</div>
+        <div style="font-size: 2rem; font-weight: 700; color: #667eea;">${days}</div>
       </div>
       <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
         <div style="font-weight: 600; color: #2c3e50;">Total Days</div>
-        <div style="font-size: 2rem; font-weight: 700; color: #f093fb;">${totalDays}</div>
+        <div style="font-size: 2rem; font-weight: 700; color: #4ecdc4;">${totalDays}</div>
       </div>
       <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
         <div style="font-weight: 600; color: #2c3e50;">Total Hours</div>

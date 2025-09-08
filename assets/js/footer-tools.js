@@ -72,6 +72,23 @@ function formatNumber(num) {
 }
 
 // Add tooltip functionality for footer sections
+// Tools Dropdown Functionality
+function toggleToolsDropdown(event) {
+	event.preventDefault();
+	const dropdown = event.target.closest('.tools-dropdown');
+	dropdown.classList.toggle('active');
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(event) {
+	const dropdown = document.querySelector('.tools-dropdown');
+	const isClickInside = dropdown.contains(event.target);
+	
+	if (!isClickInside && dropdown.classList.contains('active')) {
+		dropdown.classList.remove('active');
+	}
+});
+
 function addTooltips() {
     const sectionTitles = document.querySelectorAll('.footer-section-title');
     

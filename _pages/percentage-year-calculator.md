@@ -64,7 +64,7 @@ Calculate how much percentage of the year has passed or is remaining with our fr
     <button onclick="setToToday()" style="background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1.4rem; font-weight: 600; cursor: pointer; transition: transform 0.3s ease; margin-right: 10px;">
       Use Today
     </button>
-    <button onclick="setToNewYear()" style="background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1.4rem; font-weight: 600; cursor: pointer; transition: transform 0.3s ease;">
+    <button onclick="setToNewYear()" style="background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1.4rem; font-weight: 600; cursor: pointer; transition: transform 0.3s ease;">
       New Year
     </button>
   </div>
@@ -152,7 +152,7 @@ function calculateYearPercentage() {
       </div>
       <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
         <div style="font-weight: 600; color: #2c3e50;">Months ${calculationType === 'passed' ? 'Passed' : 'Remaining'}</div>
-        <div style="font-size: 2rem; font-weight: 700; color: #ff6b6b;">${calculationType === 'passed' ? Math.ceil(daysPassed / 30.44) : monthsRemaining}</div>
+        <div style="font-size: 2rem; font-weight: 700; color: #667eea;">${calculationType === 'passed' ? Math.ceil(daysPassed / 30.44) : monthsRemaining}</div>
       </div>
     </div>
   `;

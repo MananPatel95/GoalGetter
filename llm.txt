@@ -6,7 +6,7 @@ Goal Getter is a comprehensive goal and habit tracking app available on iOS, iPa
 ## Key Features
 - **Goal Tracking**: Track completion, countdown, and abstinence goals
 - **Widgets**: Home screen, lock screen, and notification center widgets
-- **Cross-Platform**: iOS, iPad, Mac, and Android support
+- **Cross-Platform**: iOS, iPad, and Mac support
 - **Privacy-First**: All data stored locally on device
 - **Free**: No subscriptions or hidden costs
 
@@ -47,8 +47,6 @@ Comprehensive guides for adding widgets across all platforms:
 - iPad Widgets
 - Mac Desktop Widgets
 - Mac Notification Center
-- Android Home Screen Widget
-- Android Lock Screen Widget
 
 ## Target Keywords
 - goal tracking, habit tracking, countdown calculator
@@ -57,12 +55,11 @@ Comprehensive guides for adding widgets across all platforms:
 - intermittent fasting, sleep calculator
 - business days calculator, age calculator
 - widget setup
-- iPhone widgets, Android widgets
+- iPhone widgets
 
 ## App Store Links
 - iOS App Store: Search "Goal Getter"
 - Mac App Store: Available for Apple Silicon Macs
-- Google Play Store: Android version available
 
 ## Contact & Support
 - Privacy Policy: /privacypolicy/

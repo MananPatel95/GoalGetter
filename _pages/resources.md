@@ -2,8 +2,8 @@
 layout: page
 title: Resources
 permalink: /resources/
-description: Help guides, FAQs, and resources for Goal Getter app. Learn how to use widgets on iPhone, iPad, Mac, and Android.
-keywords: help, guides, FAQ, widgets, iPhone, iPad, Mac, Android, support
+description: Help guides, FAQs, and resources for Goal Getter app. Learn how to use widgets on iPhone, iPad, and Mac.
+keywords: help, guides, FAQ, widgets, iPhone, iPad, Mac, support
 include_in_header: true
 ---
 
@@ -21,9 +21,6 @@ Everything you need to know about using Goal Getter and setting up widgets on yo
 - [Mac Desktop Widgets](/help/mac-desktop-widgets) - How to add widgets to your Mac desktop
 - [Mac Notification Center](/help/mac-notification-center) - How to add widgets to Mac Notification Center
 
-### Android
-- [Android Home Screen Widget](/help/android-home-screen-widget) - How to add widgets to your Android home screen
-- [Android Lock Screen Widget](/help/android-lock-screen-widget) - How to add widgets to your Android lock screen
 
 ## Getting Started
 
@@ -79,7 +76,7 @@ Stay updated with the latest features and improvements:
     "@type": "SoftwareApplication",
     "name": "Goal Getter",
     "applicationCategory": "ProductivityApplication",
-    "operatingSystem": ["iOS", "iPadOS", "macOS", "Android"],
+    "operatingSystem": ["iOS", "iPadOS", "macOS"],
     "offers": {
       "@type": "Offer",
       "price": "0",

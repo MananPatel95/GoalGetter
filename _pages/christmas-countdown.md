@@ -136,19 +136,19 @@ function updateCountdown() {
   document.getElementById('countdownResult').innerHTML = `Time until Christmas:`;
   
   const countdownBoxes = `
-    <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
       <div style="font-size: 2.4rem; font-weight: 700;">${days}</div>
       <div style="font-size: 1.2rem; font-weight: 600;">Days</div>
     </div>
-    <div style="background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+    <div style="background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
       <div style="font-size: 2.4rem; font-weight: 700;">${hours}</div>
       <div style="font-size: 1.2rem; font-weight: 600;">Hours</div>
     </div>
-    <div style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
       <div style="font-size: 2.4rem; font-weight: 700;">${minutes}</div>
       <div style="font-size: 1.2rem; font-weight: 600;">Minutes</div>
     </div>
-    <div style="background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+    <div style="background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
       <div style="font-size: 2.4rem; font-weight: 700;">${seconds}</div>
       <div style="font-size: 1.2rem; font-weight: 600;">Seconds</div>
     </div>

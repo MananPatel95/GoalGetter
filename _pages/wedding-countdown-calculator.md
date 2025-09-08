@@ -64,7 +64,7 @@ Calculate the exact time remaining until your wedding day with our free countdow
     <button onclick="setToNextMonth()" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1.4rem; font-weight: 600; cursor: pointer; transition: transform 0.3s ease; margin-right: 10px;">
       Next Month
     </button>
-    <button onclick="pauseCountdown()" id="pauseBtn" style="background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1.4rem; font-weight: 600; cursor: pointer; transition: transform 0.3s ease;">
+    <button onclick="pauseCountdown()" id="pauseBtn" style="background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1.4rem; font-weight: 600; cursor: pointer; transition: transform 0.3s ease;">
       Pause
     </button>
   </div>
@@ -165,11 +165,11 @@ function updateCountdown() {
       <div style="font-size: 2.4rem; font-weight: 700;">${hours}</div>
       <div style="font-size: 1.2rem; font-weight: 600;">Hours</div>
     </div>
-    <div style="background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
       <div style="font-size: 2.4rem; font-weight: 700;">${minutes}</div>
       <div style="font-size: 1.2rem; font-weight: 600;">Minutes</div>
     </div>
-    <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+    <div style="background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
       <div style="font-size: 2.4rem; font-weight: 700;">${seconds}</div>
       <div style="font-size: 1.2rem; font-weight: 600;">Seconds</div>
     </div>

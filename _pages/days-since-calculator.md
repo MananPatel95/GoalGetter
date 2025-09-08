@@ -67,7 +67,7 @@ Calculate how many days have passed since a specific date. Perfect for tracking 
     <button onclick="setToNewYear()" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1.4rem; font-weight: 600; cursor: pointer; margin-right: 10px;">
       New Year
     </button>
-    <button onclick="setToBirthday()" style="background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1.4rem; font-weight: 600; cursor: pointer;">
+    <button onclick="setToBirthday()" style="background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1.4rem; font-weight: 600; cursor: pointer;">
       My Birthday
     </button>
   </div>
@@ -147,11 +147,11 @@ function calculateDaysSince() {
       </div>
       <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
         <div style="font-weight: 600; color: #2c3e50;">Months</div>
-        <div style="font-size: 2rem; font-weight: 700; color: #ff6b6b;">${monthsSince}</div>
+        <div style="font-size: 2rem; font-weight: 700; color: #667eea;">${monthsSince}</div>
       </div>
       <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
         <div style="font-weight: 600; color: #2c3e50;">Years</div>
-        <div style="font-size: 2rem; font-weight: 700; color: #f093fb;">${yearsSince}</div>
+        <div style="font-size: 2rem; font-weight: 700; color: #4ecdc4;">${yearsSince}</div>
       </div>
     </div>
   `;
