@@ -72,20 +72,45 @@ function formatNumber(num) {
 }
 
 // Add tooltip functionality for footer sections
-// Tools Dropdown Functionality
+// Dropdown Functionality
 function toggleToolsDropdown(event) {
 	event.preventDefault();
 	const dropdown = event.target.closest('.tools-dropdown');
 	dropdown.classList.toggle('active');
+	
+	// Close resources dropdown if open
+	const resourcesDropdown = document.querySelector('.resources-dropdown');
+	if (resourcesDropdown.classList.contains('active')) {
+		resourcesDropdown.classList.remove('active');
+	}
 }
 
-// Close dropdown when clicking outside
-document.addEventListener('click', function(event) {
-	const dropdown = document.querySelector('.tools-dropdown');
-	const isClickInside = dropdown.contains(event.target);
+function toggleResourcesDropdown(event) {
+	event.preventDefault();
+	const dropdown = event.target.closest('.resources-dropdown');
+	dropdown.classList.toggle('active');
 	
-	if (!isClickInside && dropdown.classList.contains('active')) {
-		dropdown.classList.remove('active');
+	// Close tools dropdown if open
+	const toolsDropdown = document.querySelector('.tools-dropdown');
+	if (toolsDropdown.classList.contains('active')) {
+		toolsDropdown.classList.remove('active');
+	}
+}
+
+// Close dropdowns when clicking outside
+document.addEventListener('click', function(event) {
+	const toolsDropdown = document.querySelector('.tools-dropdown');
+	const resourcesDropdown = document.querySelector('.resources-dropdown');
+	
+	const isClickInsideTools = toolsDropdown.contains(event.target);
+	const isClickInsideResources = resourcesDropdown.contains(event.target);
+	
+	if (!isClickInsideTools && toolsDropdown.classList.contains('active')) {
+		toolsDropdown.classList.remove('active');
+	}
+	
+	if (!isClickInsideResources && resourcesDropdown.classList.contains('active')) {
+		resourcesDropdown.classList.remove('active');
 	}
 });
 

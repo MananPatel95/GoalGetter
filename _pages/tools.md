@@ -4,7 +4,6 @@ title: Tools
 permalink: /tools/
 description: Free online calculators and tools for goal tracking, countdowns, date calculations, and more. All tools work instantly in your browser.
 keywords: calculators, tools, countdown, date calculator, goal tracking, productivity tools
-include_in_header: true
 ---
 
 # Goal Getter Tools

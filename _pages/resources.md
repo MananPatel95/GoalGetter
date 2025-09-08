@@ -4,7 +4,6 @@ title: Resources
 permalink: /resources/
 description: Help guides, FAQs, and resources for Goal Getter app. Learn how to use widgets on iPhone, iPad, and Mac.
 keywords: help, guides, FAQ, widgets, iPhone, iPad, Mac, support
-include_in_header: true
 ---
 
 # Goal Getter Resources
