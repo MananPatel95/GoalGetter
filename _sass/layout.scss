@@ -118,33 +118,34 @@ header {
 }
 
 .made-with-love {
-	margin-left: 15px;
-	margin-top: 8px;
+	text-align: center;
+	margin-top: 20px;
+	padding: 15px 0;
 }
 
 .made-with-love p {
-	color: rgba($header-title-color, 0.8);
-	font-size: 1.2rem;
+	color: #666666;
+	font-size: 1.1rem;
 	font-weight: 400;
 	margin: 0;
-	line-height: 1.3;
+	line-height: 1.4;
 }
 
 .made-with-love a {
-	color: rgba($header-title-color, 0.9);
+	color: #667eea;
 	text-decoration: none;
 	font-weight: 500;
 	transition: color 0.3s ease;
 }
 
 .made-with-love a:hover {
-	color: rgba($header-title-color, 1);
+	color: #4ecdc4;
 	text-decoration: underline;
 }
 
 .heart, .coffee {
 	font-size: 1.1em;
-	margin: 0 2px;
+	margin: 0 3px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -155,10 +156,6 @@ header {
 	}
 
 	.logo > p {
-		display: none;
-	}
-	
-	.made-with-love {
 		display: none;
 	}
 	
@@ -428,18 +425,6 @@ nav > ul li a:active {
 // Sub Page Header Styling
 .subPageHeaderBackground .logo > p {
 	color: #000;
-}
-
-.subPageHeaderBackground .made-with-love p {
-	color: rgba(#000, 0.8);
-}
-
-.subPageHeaderBackground .made-with-love a {
-	color: rgba(#000, 0.9);
-}
-
-.subPageHeaderBackground .made-with-love a:hover {
-	color: rgba(#000, 1);
 }
 
 .subPageHeaderBackground nav > ul li a:link,
@@ -1203,6 +1188,15 @@ footer {
 		padding: 20px 15px 0;
 		grid-column: 1 / -1;
 		width: 100%;
+	}
+	
+	.made-with-love {
+		margin-top: 15px;
+		padding: 10px 15px;
+	}
+	
+	.made-with-love p {
+		font-size: 1rem;
 	}
 	
 	.copyright-text {
