@@ -114,6 +114,37 @@ header {
 	display: flex;
 	font-weight: bold;
 	margin-left: 15px;
+	font-size: 2.4rem;
+}
+
+.made-with-love {
+	margin-left: 15px;
+	margin-top: 8px;
+}
+
+.made-with-love p {
+	color: rgba($header-title-color, 0.8);
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin: 0;
+	line-height: 1.3;
+}
+
+.made-with-love a {
+	color: rgba($header-title-color, 0.9);
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.3s ease;
+}
+
+.made-with-love a:hover {
+	color: rgba($header-title-color, 1);
+	text-decoration: underline;
+}
+
+.heart, .coffee {
+	font-size: 1.1em;
+	margin: 0 2px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -124,6 +155,10 @@ header {
 	}
 
 	.logo > p {
+		display: none;
+	}
+	
+	.made-with-love {
 		display: none;
 	}
 	
@@ -259,7 +294,7 @@ nav > ul li a:active {
 	background: white !important;
 	border-radius: 12px;
 	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-	padding: 20px;
+	padding: 25px 20px;
 	min-width: 500px;
 	max-width: 90vw;
 	z-index: 999999 !important;
@@ -269,7 +304,7 @@ nav > ul li a:active {
 	transition: all 0.3s ease;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	gap: 20px;
+	gap: 25px;
 	margin-top: 10px;
 }
 
@@ -282,11 +317,11 @@ nav > ul li a:active {
 
 .tools-dropdown-section h4,
 .resources-dropdown-section h4 {
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 	font-weight: 600;
 	color: #2c3e50 !important;
-	margin: 0 0 12px 0;
-	padding-bottom: 6px;
+	margin: 0 0 15px 0;
+	padding-bottom: 8px;
 	border-bottom: 2px solid #e9ecef;
 }
 
@@ -300,18 +335,18 @@ nav > ul li a:active {
 .tools-dropdown-section ul li,
 .resources-dropdown-section ul li {
 	padding: 0;
-	margin-bottom: 6px;
+	margin-bottom: 8px;
 }
 
 .tools-dropdown-section ul li a,
 .resources-dropdown-section ul li a {
 	color: #2c3e50 !important;
 	text-decoration: none;
-	font-size: 0.9rem;
-	line-height: 1.4;
+	font-size: 1.1rem;
+	line-height: 1.5;
 	transition: color 0.3s ease;
 	display: block;
-	padding: 4px 0;
+	padding: 6px 0;
 }
 
 .tools-dropdown-section ul li a:hover,
@@ -343,10 +378,24 @@ nav > ul li a:active {
 @media only screen and (max-width: 768px) {
 	.tools-dropdown-menu,
 	.resources-dropdown-menu {
-		min-width: 300px;
+		min-width: 320px;
 		max-width: 95vw;
 		grid-template-columns: 1fr;
 		left: -50px;
+		padding: 20px 15px;
+		gap: 20px;
+	}
+	
+	.tools-dropdown-section h4,
+	.resources-dropdown-section h4 {
+		font-size: 1.2rem;
+		margin: 0 0 12px 0;
+	}
+	
+	.tools-dropdown-section ul li a,
+	.resources-dropdown-section ul li a {
+		font-size: 1rem;
+		padding: 5px 0;
 	}
 }
 
@@ -354,10 +403,23 @@ nav > ul li a:active {
 @media only screen and (max-width: 480px) {
 	.tools-dropdown-menu,
 	.resources-dropdown-menu {
-		min-width: 280px;
+		min-width: 300px;
 		max-width: 98vw;
 		left: -30px;
-		padding: 15px;
+		padding: 18px 12px;
+		gap: 18px;
+	}
+	
+	.tools-dropdown-section h4,
+	.resources-dropdown-section h4 {
+		font-size: 1.1rem;
+		margin: 0 0 10px 0;
+	}
+	
+	.tools-dropdown-section ul li a,
+	.resources-dropdown-section ul li a {
+		font-size: 0.95rem;
+		padding: 4px 0;
 	}
 }
 
@@ -366,6 +428,18 @@ nav > ul li a:active {
 // Sub Page Header Styling
 .subPageHeaderBackground .logo > p {
 	color: #000;
+}
+
+.subPageHeaderBackground .made-with-love p {
+	color: rgba(#000, 0.8);
+}
+
+.subPageHeaderBackground .made-with-love a {
+	color: rgba(#000, 0.9);
+}
+
+.subPageHeaderBackground .made-with-love a:hover {
+	color: rgba(#000, 1);
 }
 
 .subPageHeaderBackground nav > ul li a:link,
