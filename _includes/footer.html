@@ -1,10 +1,15 @@
 <footer class="seo-footer">
 	<div class="footer-content">
-		<!-- Brand Section -->
-		<div class="footer-brand">
+		<div class="footer-main-content">
+			<!-- Brand Section -->
+			<div class="footer-brand">
 			<div class="footer-logo">
 				<img src="{{ site.app_icon | relative_url }}" alt="Goal Getter" class="footer-app-icon">
 				<span class="footer-app-name">Goal Getter</span>
+			</div>
+			<!-- Made with Love Section -->
+			<div class="made-with-love">
+				<p>Made with <span class="heart">❤️</span> and <span class="coffee">☕</span> by <a href="https://www.linkedin.com/in/mananpatel95/" target="_blank" rel="noopener noreferrer">Manan Patel</a></p>
 			</div>
 			<div class="footer-social">
 				{% if site.facebook_username %}
@@ -36,14 +41,6 @@
 			</div>
 		</div>
 
-		<!-- Help & FAQs Section -->
-		<div class="footer-section">
-			<h3 class="footer-section-title">Help & FAQs</h3>
-			<ul class="footer-links-list">
-				<li><a href="/help/ios-mac-faq">FAQs - iOS and Mac</a></li>
-			</ul>
-		</div>
-
 		<!-- iPhone Widgets Section -->
 		<div class="footer-section">
 			<h3 class="footer-section-title">iPhone</h3>
@@ -72,6 +69,13 @@
 			</ul>
 		</div>
 
+		<!-- Help & FAQs Section -->
+		<div class="footer-section">
+			<h3 class="footer-section-title">Help & FAQs</h3>
+			<ul class="footer-links-list">
+				<li><a href="/help/ios-mac-faq">FAQs - iOS and Mac</a></li>
+			</ul>
+		</div>
 
 		<!-- Tools Section -->
 		<div class="footer-section tools-section">
@@ -116,23 +120,19 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<!-- Copyright Section -->
-	<div class="footer-copyright">
-		<div class="copyright-text">
-			© 2024 Goal Getter. All rights reserved.
 		</div>
-		<div class="footer-legal-links">
-			<a href="/privacypolicy">Privacy Policy</a> • 
-			<a href="/termsandconditions">Terms & Conditions</a> • 
-			<a href="/contactus">Contact Us</a> • 
-			<a href="/changelog">What's New</a>
+		
+		<!-- Copyright Section -->
+		<div class="footer-copyright">
+			<div class="copyright-text">
+				© 2024 Goal Getter. All rights reserved.
+			</div>
+			<div class="footer-legal-links">
+				<a href="/privacypolicy">Privacy Policy</a> • 
+				<a href="/termsandconditions">Terms & Conditions</a> • 
+				<a href="/contactus">Contact Us</a> • 
+				<a href="/changelog">What's New</a>
+			</div>
 		</div>
-	</div>
-	
-	<!-- Made with Love Section -->
-	<div class="made-with-love">
-		<p>Made with <span class="heart">❤️</span> and <span class="coffee">☕</span> by <a href="https://www.linkedin.com/in/mananpatel95/" target="_blank" rel="noopener noreferrer">Manan Patel</a></p>
 	</div>
 </footer>
