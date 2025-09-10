@@ -1,7 +1,7 @@
 ---
 layout: page
 title: How to add Goal widgets on your iPad
-permalink: /help/ipad-widgets/
+permalink: /ipad-widgets/
 ---
 
 # How to add Goal widgets on your iPad

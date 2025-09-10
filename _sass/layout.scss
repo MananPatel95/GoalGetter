@@ -118,7 +118,7 @@ header {
 }
 
 .made-with-love {
-	margin-top: 5px;
+	margin-top: 0;
 	padding: 0;
 }
 
@@ -144,7 +144,7 @@ header {
 
 .heart, .coffee {
 	font-size: 1.1em;
-	margin: 0 3px;
+	margin: 0 -3px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -317,8 +317,14 @@ nav > ul li a:active {
 	font-weight: 600;
 	color: #2c3e50 !important;
 	margin: 0 0 15px 0;
-	padding-bottom: 8px;
+	padding: 0;
 	border-bottom: 2px solid #e9ecef;
+}
+
+.tools-dropdown-section,
+.resources-dropdown-section {
+	margin: 0;
+	padding: 0;
 }
 
 .tools-dropdown-section ul,
@@ -880,6 +886,13 @@ footer {
 
 .footer-logo {
 	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.footer-logo-content {
+	display: flex;
 	align-items: center;
 	gap: 15px;
 }
@@ -1200,7 +1213,7 @@ footer {
 	}
 	
 	.made-with-love {
-		margin-top: 3px;
+		margin-top: 0;
 		padding: 0;
 	}
 	

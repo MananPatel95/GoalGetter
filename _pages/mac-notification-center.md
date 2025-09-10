@@ -1,7 +1,7 @@
 ---
 layout: page
 title: How to add Goal widgets to Mac Notification Center
-permalink: /help/mac-notification-center/
+permalink: /mac-notification-center/
 ---
 
 # How to add Goal widgets to Mac Notification Center

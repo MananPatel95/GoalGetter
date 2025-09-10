@@ -148,7 +148,7 @@ function positionDropdown(dropdown) {
 	}
 	
 	// Calculate position relative to viewport (since we're using position: fixed)
-	let left = dropdownRect.left;
+	let left = dropdownRect.left - 20; // Reduce left offset to fix indentation
 	let top = dropdownRect.bottom + 10; // 10px gap below trigger
 	
 	// Check if dropdown extends beyond right edge of viewport

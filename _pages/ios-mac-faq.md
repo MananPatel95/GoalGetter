@@ -1,7 +1,7 @@
 ---
 layout: page
 title: FAQs - iOS and Mac
-permalink: /help/ios-mac-faq/
+permalink: /ios-mac-faq/
 ---
 
 # Frequently Asked Questions - iOS and Mac

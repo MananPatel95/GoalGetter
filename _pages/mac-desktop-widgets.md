@@ -1,7 +1,7 @@
 ---
 layout: page
 title: How to add Goal widgets on your Mac desktop
-permalink: /help/mac-desktop-widgets/
+permalink: /mac-desktop-widgets/
 ---
 
 # How to add Goal widgets on your Mac desktop

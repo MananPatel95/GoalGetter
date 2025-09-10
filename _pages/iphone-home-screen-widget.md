@@ -1,7 +1,7 @@
 ---
 layout: page
 title: How to add a Goal widget on your iPhone's Home Screen
-permalink: /help/iphone-home-screen-widget/
+permalink: /iphone-home-screen-widget/
 ---
 
 # How to add a Goal widget on your iPhone's Home Screen

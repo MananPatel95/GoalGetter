@@ -1,7 +1,7 @@
 ---
 layout: page
 title: How to add a Goal widget on your iPhone's Lock Screen
-permalink: /help/iphone-lock-screen-widget/
+permalink: /iphone-lock-screen-widget/
 ---
 
 # How to add a Goal widget on your iPhone's Lock Screen
