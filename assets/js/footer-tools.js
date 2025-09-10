@@ -188,8 +188,22 @@ function positionDropdown(dropdown) {
 		menuWidth: menuRect.width,
 		menuHeight: menuRect.height,
 		calculatedLeft: left,
-		calculatedTop: top
+		calculatedTop: top,
+		dropdownRect: dropdownRect,
+		menuRect: menuRect
 	});
+	
+	// Additional debugging for first column positioning
+	const firstColumn = dropdownMenu.querySelector('.tools-dropdown-section, .resources-dropdown-section');
+	if (firstColumn) {
+		const firstColumnRect = firstColumn.getBoundingClientRect();
+		console.log('First column position:', {
+			firstColumnLeft: firstColumnRect.left,
+			firstColumnWidth: firstColumnRect.width,
+			menuLeft: menuRect.left,
+			offsetFromMenu: firstColumnRect.left - menuRect.left
+		});
+	}
 }
 
 // Close dropdowns when clicking outside

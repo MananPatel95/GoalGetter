@@ -302,6 +302,15 @@ nav > ul li a:active {
 	grid-template-columns: repeat(4, 1fr);
 	gap: 25px;
 	margin-top: 10px;
+	/* Debug: Add border to see grid structure */
+	border: 2px solid red;
+}
+
+/* Debug: Add border to first column */
+.tools-dropdown-section:first-child,
+.resources-dropdown-section:first-child {
+	border: 2px solid blue;
+	background: rgba(0, 0, 255, 0.1);
 }
 
 .tools-dropdown.active .tools-dropdown-menu,
