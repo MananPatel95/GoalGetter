@@ -344,6 +344,12 @@ nav > ul > li > a:active {
 	margin-bottom: 8px;
 }
 
+/* Force-remove any inherited left padding from top-level nav rules */
+.tools-dropdown-section ul li,
+.resources-dropdown-section ul li {
+	padding-left: 0 !important;
+}
+
 .tools-dropdown-section ul li a,
 .resources-dropdown-section ul li a {
 	color: #2c3e50 !important;
