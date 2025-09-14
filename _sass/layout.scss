@@ -302,17 +302,10 @@ nav > ul li a:active {
 	flex-direction: row;
 	justify-content: space-between;
 	margin-top: 10px;
-	/* Debug: Add border to see grid structure */
-	border: 2px solid red;
+	/* removed debug border */
 }
 
-/* Debug: Add border to first column */
-.tools-dropdown-section:first-child,
-.resources-dropdown-section:first-child {
-	border: 2px solid blue;
-	background: rgba(0, 0, 255, 0.1);
-	justify-self: start;
-}
+/* removed debug styles for first column highlight */
 
 .tools-dropdown.active .tools-dropdown-menu,
 .resources-dropdown.active .resources-dropdown-menu {
