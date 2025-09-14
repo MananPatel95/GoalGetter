@@ -298,10 +298,9 @@ nav > ul li a:active {
 	visibility: hidden;
 	transform: translateY(-10px);
 	transition: all 0.3s ease;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 25px;
-	justify-items: start;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	margin-top: 10px;
 	/* Debug: Add border to see grid structure */
 	border: 2px solid red;
@@ -335,9 +334,8 @@ nav > ul li a:active {
 .tools-dropdown-section,
 .resources-dropdown-section {
 	margin: 0;
-	padding: 0;
-	justify-self: start;
-	align-self: start;
+	padding: 0 12px;
+	flex: 1;
 }
 
 .tools-dropdown-section ul,
