@@ -301,6 +301,7 @@ nav > ul li a:active {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 25px;
+	justify-items: start;
 	margin-top: 10px;
 	/* Debug: Add border to see grid structure */
 	border: 2px solid red;
@@ -311,6 +312,7 @@ nav > ul li a:active {
 .resources-dropdown-section:first-child {
 	border: 2px solid blue;
 	background: rgba(0, 0, 255, 0.1);
+	justify-self: start;
 }
 
 .tools-dropdown.active .tools-dropdown-menu,
@@ -334,6 +336,8 @@ nav > ul li a:active {
 .resources-dropdown-section {
 	margin: 0;
 	padding: 0;
+	justify-self: start;
+	align-self: start;
 }
 
 .tools-dropdown-section ul,
