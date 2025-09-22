@@ -804,7 +804,6 @@ nav > ul > li > a:active {
 } 
 
 // Page Content Styling
-
 .page-content {
 	max-width: 800px;
 	margin: 0 auto;
@@ -823,6 +822,7 @@ nav > ul > li > a:active {
 	font-size: 0.9rem;
 	margin-bottom: 20px;
 	transition: color 0.2s ease;
+	font-family: 'Inter', sans-serif;
 }
 
 .back-link:hover {
@@ -840,6 +840,7 @@ nav > ul > li > a:active {
 	color: #111827;
 	margin: 0 0 12px 0;
 	line-height: 1.2;
+	font-family: 'Inter', sans-serif;
 }
 
 .page-description {
@@ -847,6 +848,7 @@ nav > ul > li > a:active {
 	color: #6B7280;
 	margin: 0;
 	line-height: 1.5;
+	font-family: 'Inter', sans-serif;
 }
 
 .page-content-body {
@@ -855,6 +857,7 @@ nav > ul > li > a:active {
 	border-radius: 12px;
 	padding: 32px;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	font-family: 'Inter', sans-serif;
 }
 
 .page-content-body h1 {
@@ -940,52 +943,6 @@ nav > ul > li > a:active {
 	margin: 0;
 	color: #6B7280;
 	font-style: italic;
-}
-
-// Tool-specific styling
-.tool-card {
-	background: #FFFFFF;
-	border: 1px solid #E5E7EB;
-	border-radius: 12px;
-	padding: 24px;
-	margin: 20px 0;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.tool-card h3 {
-	font-size: 1.25rem;
-	font-weight: 600;
-	color: #111827;
-	margin: 0 0 12px 0;
-	display: flex;
-	align-items: center;
-}
-
-.tool-card h3 .material-icons {
-	font-size: 20px;
-	margin-right: 8px;
-	color: #E83D99;
-}
-
-.feature-list {
-	list-style: none;
-	padding: 0;
-	margin: 16px 0;
-}
-
-.feature-list li {
-	display: flex;
-	align-items: center;
-	margin: 8px 0;
-	font-size: 0.95rem;
-	color: #374151;
-}
-
-.feature-list li::before {
-	content: "✓";
-	color: #10B981;
-	font-weight: bold;
-	margin-right: 8px;
 }
 
 // Page Content Responsive Design
