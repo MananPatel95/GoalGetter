@@ -18,11 +18,13 @@
                         <span>Back to Home</span>
                     </a>
                     <h1 class="page-title">{{ page.title }}</h1>
-                    <p class="page-description">{{ page.description | default: "A helpful tool for your goals and habits" }}</p>
+                    {% if page.description %}
+                    <p class="page-description">{{ page.description }}</p>
+                    {% endif %}
                 </div>
-                <article class="page-content-body">
+                <div class="page-content-body">
                     {{ content }}
-                </article>
+                </div>
             </div>
         </div>
         {% include appstoreimages.html %}

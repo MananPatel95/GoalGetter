@@ -988,6 +988,59 @@ nav > ul > li > a:active {
 	margin-right: 8px;
 }
 
+// Page Content Responsive Design
+@media only screen and (max-width: 768px) {
+	.page-content {
+		padding: 20px 15px;
+	}
+	
+	.page-title {
+		font-size: 2rem;
+	}
+	
+	.page-content-body {
+		padding: 24px;
+	}
+	
+	.page-content-body h1 {
+		font-size: 1.75rem;
+	}
+	
+	.page-content-body h2 {
+		font-size: 1.375rem;
+	}
+	
+	.page-content-body h3 {
+		font-size: 1.125rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.page-content {
+		padding: 15px 10px;
+	}
+	
+	.page-title {
+		font-size: 1.75rem;
+	}
+	
+	.page-content-body {
+		padding: 20px;
+	}
+	
+	.page-content-body h1 {
+		font-size: 1.5rem;
+	}
+	
+	.page-content-body h2 {
+		font-size: 1.25rem;
+	}
+	
+	.page-content-body h3 {
+		font-size: 1.125rem;
+	}
+}
+
 // Footer
 
 footer {
