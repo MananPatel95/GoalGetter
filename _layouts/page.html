@@ -11,9 +11,19 @@
     <div class="headerBackground subPageHeaderBackground">
         <div class="container subPageContainer">
         {% include header.html %}
-            <article class="page markdown-body">
-                {{ content }}
-            </article>
+            <div class="page-content">
+                <div class="page-header">
+                    <a href="/" class="back-link">
+                        <span class="material-icons">arrow_back</span>
+                        <span>Back to Home</span>
+                    </a>
+                    <h1 class="page-title">{{ page.title }}</h1>
+                    <p class="page-description">{{ page.description | default: "A helpful tool for your goals and habits" }}</p>
+                </div>
+                <article class="page-content-body">
+                    {{ content }}
+                </article>
+            </div>
         </div>
         {% include appstoreimages.html %}
         {% include footer.html %}

@@ -2,9 +2,8 @@
 layout: page
 title: Date Countdown Calculator
 permalink: /date-countdown-calculator/
+description: Calculate the exact time remaining until any future date with our free countdown calculator. Perfect for weddings, vacations, deadlines, and special events.
 ---
-
-# Date Countdown Calculator
 
 Calculate the exact time remaining until any future date with our free countdown calculator.
 
@@ -12,48 +11,44 @@ Calculate the exact time remaining until any future date with our free countdown
 
 Track time until any important date with our precise countdown calculator. Perfect for weddings, vacations, deadlines, and special events.
 
-<div class="calculator-container" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 30px; border-radius: 16px; margin: 30px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div class="calculator-header" style="text-align: center; margin-bottom: 30px;">
-    <h3 style="color: #2c3e50; margin-bottom: 10px;">📅 Date Countdown Calculator</h3>
-    <p style="color: #5a6c7d; font-size: 1.4rem;">Calculate time remaining until any future date</p>
-  </div>
+<div class="tool-card">
+  <h3><span class="material-icons">schedule</span>Date Countdown Calculator</h3>
+  <p>Calculate time remaining until any future date</p>
   
-  <div class="calculator-inputs" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
-      <div>
-        <label for="targetDate" style="display: block; font-weight: 600; color: #2c3e50; margin-bottom: 8px;">Target Date</label>
-        <input type="date" id="targetDate" style="width: 100%; padding: 12px; border: 2px solid #e9ecef; border-radius: 8px; font-size: 1.1rem; transition: border-color 0.3s ease;" onchange="updateCountdown()">
-      </div>
-      <div>
-        <label for="targetTime" style="display: block; font-weight: 600; color: #2c3e50; margin-bottom: 8px;">Target Time (Optional)</label>
-        <input type="time" id="targetTime" style="width: 100%; padding: 12px; border: 2px solid #e9ecef; border-radius: 8px; font-size: 1.1rem; transition: border-color 0.3s ease;" onchange="updateCountdown()">
-      </div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0;">
+    <div>
+      <label for="targetDate" style="display: block; font-weight: 600; color: #111827; margin-bottom: 8px;">Target Date</label>
+      <input type="date" id="targetDate" style="width: 100%; padding: 12px; border: 1px solid #E5E7EB; border-radius: 8px; font-size: 1rem; background: #FFFFFF;" onchange="updateCountdown()">
     </div>
-    
-    <div style="text-align: center;">
-      <button onclick="setToNextYear()" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1.4rem; font-weight: 600; cursor: pointer; transition: transform 0.3s ease; margin-right: 10px;">
-        Next Year
-      </button>
-      <button onclick="setToNextMonth()" style="background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1.4rem; font-weight: 600; cursor: pointer; transition: transform 0.3s ease;">
-        Next Month
-      </button>
+    <div>
+      <label for="targetTime" style="display: block; font-weight: 600; color: #111827; margin-bottom: 8px;">Target Time (Optional)</label>
+      <input type="time" id="targetTime" style="width: 100%; padding: 12px; border: 1px solid #E5E7EB; border-radius: 8px; font-size: 1rem; background: #FFFFFF;" onchange="updateCountdown()">
     </div>
   </div>
   
-  <div class="countdown-display" style="text-align: center; padding: 30px; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
-    <div id="countdownResult" style="font-size: 2.4rem; font-weight: 700; color: #2c3e50; margin-bottom: 20px;">
+  <div style="text-align: center; margin: 20px 0;">
+    <button onclick="setToNextYear()" style="background: #E83D99; color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; margin-right: 10px; transition: background-color 0.2s ease;" onmouseover="this.style.backgroundColor='#D63384'" onmouseout="this.style.backgroundColor='#E83D99'">
+      Next Year
+    </button>
+    <button onclick="setToNextMonth()" style="background: #6B7280; color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background-color 0.2s ease;" onmouseover="this.style.backgroundColor='#4B5563'" onmouseout="this.style.backgroundColor='#6B7280'">
+      Next Month
+    </button>
+  </div>
+  
+  <div style="text-align: center; padding: 24px; background: #F9FAFB; border-radius: 8px; margin: 20px 0;">
+    <div id="countdownResult" style="font-size: 1.5rem; font-weight: 600; color: #111827; margin-bottom: 16px;">
       Select a date to start countdown
     </div>
-    <div id="countdownDetails" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px;">
+    <div id="countdownDetails" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 12px;">
       <!-- Countdown boxes will be inserted here -->
     </div>
   </div>
   
-  <div class="calculator-actions" style="text-align: center;">
-    <button onclick="pauseCountdown()" id="pauseBtn" style="background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1.4rem; font-weight: 600; cursor: pointer; margin-right: 10px;">
+  <div style="text-align: center;">
+    <button onclick="pauseCountdown()" id="pauseBtn" style="background: #10B981; color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; margin-right: 10px; transition: background-color 0.2s ease;" onmouseover="this.style.backgroundColor='#059669'" onmouseout="this.style.backgroundColor='#10B981'">
       Pause
     </button>
-    <button onclick="shareCountdown()" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1.4rem; font-weight: 600; cursor: pointer;">
+    <button onclick="shareCountdown()" style="background: #3B82F6; color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background-color 0.2s ease;" onmouseover="this.style.backgroundColor='#2563EB'" onmouseout="this.style.backgroundColor='#3B82F6'">
       Share
     </button>
   </div>
@@ -102,21 +97,21 @@ function updateCountdown() {
   document.getElementById('countdownResult').innerHTML = `Time remaining:`;
   
   const countdownBoxes = `
-    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
-      <div style="font-size: 2.4rem; font-weight: 700;">${days}</div>
-      <div style="font-size: 1.2rem; font-weight: 600;">Days</div>
+    <div style="background: #E83D99; color: white; padding: 16px; border-radius: 8px; text-align: center;">
+      <div style="font-size: 1.8rem; font-weight: 700;">${days}</div>
+      <div style="font-size: 0.9rem; font-weight: 600;">Days</div>
     </div>
-    <div style="background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
-      <div style="font-size: 2.4rem; font-weight: 700;">${hours}</div>
-      <div style="font-size: 1.2rem; font-weight: 600;">Hours</div>
+    <div style="background: #3B82F6; color: white; padding: 16px; border-radius: 8px; text-align: center;">
+      <div style="font-size: 1.8rem; font-weight: 700;">${hours}</div>
+      <div style="font-size: 0.9rem; font-weight: 600;">Hours</div>
     </div>
-    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
-      <div style="font-size: 2.4rem; font-weight: 700;">${minutes}</div>
-      <div style="font-size: 1.2rem; font-weight: 600;">Minutes</div>
+    <div style="background: #10B981; color: white; padding: 16px; border-radius: 8px; text-align: center;">
+      <div style="font-size: 1.8rem; font-weight: 700;">${minutes}</div>
+      <div style="font-size: 0.9rem; font-weight: 600;">Minutes</div>
     </div>
-    <div style="background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
-      <div style="font-size: 2.4rem; font-weight: 700;">${seconds}</div>
-      <div style="font-size: 1.2rem; font-weight: 600;">Seconds</div>
+    <div style="background: #6B7280; color: white; padding: 16px; border-radius: 8px; text-align: center;">
+      <div style="font-size: 1.8rem; font-weight: 700;">${seconds}</div>
+      <div style="font-size: 0.9rem; font-weight: 600;">Seconds</div>
     </div>
   `;
   
@@ -188,31 +183,40 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-### Features:
-- **Precise countdown** - Days, hours, minutes, and seconds
-- **Custom dates** - Count down to any future date
-- **Multiple formats** - Choose your preferred time display
-- **Mobile friendly** - Use anywhere, anytime
+## Features
 
-### How to use:
+<div class="tool-card">
+  <h3><span class="material-icons">check_circle</span>Key Features</h3>
+  <ul class="feature-list">
+    <li>Precise countdown - Days, hours, minutes, and seconds</li>
+    <li>Custom dates - Count down to any future date</li>
+    <li>Multiple formats - Choose your preferred time display</li>
+    <li>Mobile friendly - Use anywhere, anytime</li>
+  </ul>
+</div>
+
+## How to use
+
 1. Enter your target date
 2. See the exact time remaining
 3. Share your countdown with others
 
-### Perfect for:
-- **Wedding planning** - Count down to your big day
-- **Vacation countdown** - Track time until your next trip
-- **Project deadlines** - Monitor time remaining for work
-- **Special events** - Birthdays, anniversaries, holidays
+## Perfect for
 
-### Popular countdown events:
-- **Wedding day** - Track time until your wedding
-- **Vacation** - Count down to your next trip
-- **Birthday** - See how long until your next birthday
-- **Graduation** - Track time until graduation
-- **Retirement** - Count down to retirement
+<div class="tool-card">
+  <h3><span class="material-icons">event</span>Popular Use Cases</h3>
+  <ul class="feature-list">
+    <li>Wedding planning - Count down to your big day</li>
+    <li>Vacation countdown - Track time until your next trip</li>
+    <li>Project deadlines - Monitor time remaining for work</li>
+    <li>Special events - Birthdays, anniversaries, holidays</li>
+    <li>Graduation - Track time until graduation</li>
+    <li>Retirement - Count down to retirement</li>
+  </ul>
+</div>
 
-### Tips for success:
+## Tips for success
+
 - **Set reminders** - Get notified as the date approaches
 - **Track milestones** - Celebrate key countdown moments
 - **Share excitement** - Let others join in the countdown
