@@ -703,10 +703,12 @@ nav > ul > li > a:active {
 	border: 2px solid #e9ecef;
 	border-radius: 20px;
 	box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-	padding: 32px;
+	padding: 48px;
 	display: flex;
-	align-items: flex-start;
-	gap: 20px;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 24px;
 	width: 100%;
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -741,37 +743,72 @@ nav > ul > li > a:active {
 .featureText {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
-	align-content: flex-start;
-	align-items: flex-start;
-	text-align: left;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	width: 100%;
+	max-width: 600px;
 }
 
 .featureText > h3 {
 	color: $feature-title-color;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-weight: 700;
-	margin: 0 0 12px 0;
-	line-height: 1.3;
+	margin: 0 0 16px 0;
+	line-height: 1.2;
 }
 
 .featureText > p {
 	color: $feature-text-color;
-	font-size: 1.1rem;
-	line-height: 1.5;
-	margin: 0;
+	font-size: 1.2rem;
+	line-height: 1.6;
+	margin: 0 0 32px 0;
+}
+
+/* Space for feature images */
+.feature-image {
+	width: 100%;
+	max-width: 500px;
+	height: 300px;
+	background: #f8f9fa;
+	border: 2px dashed #dee2e6;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #6c757d;
+	font-size: 1rem;
+	margin-top: 24px;
 }
 
 @media only screen and (max-width: 992px) {
 	.features {
 		margin-top: 60px;
-		gap: 16px;
+		gap: 20px;
 	}
 	
 	.feature-card-full {
-		padding: 24px;
-		gap: 16px;
+		padding: 32px 24px;
+		gap: 20px;
+	}
+	
+	.featureText > h3 {
+		font-size: 1.5rem;
+	}
+	
+	.featureText > p {
+		font-size: 1.1rem;
+	}
+	
+	.feature-image {
+		height: 250px;
+		max-width: 400px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.feature-card-full {
+		padding: 24px 20px;
 	}
 	
 	.featureText > h3 {
@@ -781,17 +818,22 @@ nav > ul > li > a:active {
 	.featureText > p {
 		font-size: 1rem;
 	}
+	
+	.feature-image {
+		height: 200px;
+		max-width: 350px;
+	}
 }
 
 @media only screen and (max-width: 375px) {
 	.features {
 		margin-top: 40px;
-		gap: 12px;
+		gap: 16px;
 	}
 	
 	.feature-card-full {
-		padding: 20px;
-		gap: 12px;
+		padding: 20px 16px;
+		gap: 16px;
 	}
 	
 	.featureText > h3 {
@@ -800,6 +842,11 @@ nav > ul > li > a:active {
 	
 	.featureText > p {
 		font-size: 0.95rem;
+	}
+	
+	.feature-image {
+		height: 180px;
+		max-width: 300px;
 	}
 } 
 
