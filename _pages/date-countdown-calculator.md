@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Date Countdown Calculator
-permalink: /tools/date-countdown-calculator/
+permalink: /date-countdown-calculator/
 ---
 
 # Date Countdown Calculator

@@ -1,10 +1,10 @@
 ---
 layout: page
 title: What Was the Date Calculator
-permalink: /tools/what-was-the-date/
+permalink: /what-was-the-date/
 ---
 
-# What Was the Date Calculator
+# What Was the Date Calculatorgit
 
 Find out what day of the week any historical date fell on with our free date calculator.
 

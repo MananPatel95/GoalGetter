@@ -8,8 +8,6 @@ Sitemap: https://goalgetter.app/sitemap.xml
 Disallow:
 
 # Specific pages to prioritize
-Allow: /tools/
-Allow: /help/
 Allow: /countdowns/
 
 # LLM-friendly content

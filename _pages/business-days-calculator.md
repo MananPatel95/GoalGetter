@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Business Days Calculator
-permalink: /tools/business-days-calculator/
+permalink: /business-days-calculator/
 description: Calculate business days between two dates, excluding weekends and holidays. Perfect for project planning and deadline calculations.
 keywords: business days calculator, working days calculator, business days between dates, work days, project planning, deadline calculator
 ---

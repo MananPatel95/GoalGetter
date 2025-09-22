@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Wedding Countdown Calculator
-permalink: /tools/wedding-countdown-calculator/
+permalink: /wedding-countdown-calculator/
 description: Calculate the exact time remaining until your wedding day with our free countdown calculator. Track days, hours, minutes, and seconds.
 keywords: wedding countdown calculator, wedding countdown, wedding day countdown, wedding timer, wedding planning, wedding countdown timer
 ---

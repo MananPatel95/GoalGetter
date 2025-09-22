@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Percentage Year Calculator
-permalink: /tools/percentage-year-calculator/
+permalink: /percentage-year-calculator/
 description: Calculate how much percentage of the year has passed or is remaining with our free online calculator. Track yearly progress and goals.
 keywords: percentage year calculator, year progress, yearly goals, year percentage, time tracking, goal tracking
 ---

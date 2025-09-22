@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Christmas Countdown
-permalink: /tools/christmas-countdown/
+permalink: /christmas-countdown/
 description: Count down to Christmas with our free countdown timer. See days, hours, minutes, and seconds until Christmas Day.
 keywords: christmas countdown, christmas countdown timer, days until christmas, christmas countdown calculator, holiday countdown
 ---

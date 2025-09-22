@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Pregnancy Due Date Calculator
-permalink: /tools/pregnancy-due-date-calculator/
+permalink: /pregnancy-due-date-calculator/
 description: Calculate your estimated due date and track your pregnancy progress with our free pregnancy calculator.
 keywords: pregnancy calculator, due date calculator, pregnancy tracker, baby due date, pregnancy progress, expecting parents
 ---

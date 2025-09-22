@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Time Passed Calculator
-permalink: /tools/time-passed-calculator/
+permalink: /time-passed-calculator/
 ---
 
 # Time Passed Calculator

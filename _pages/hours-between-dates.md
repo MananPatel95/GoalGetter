@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hours Between Dates Calculator
-permalink: /tools/hours-between-dates/
+permalink: /hours-between-dates/
 ---
 
 # Hours Between Dates Calculator

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Days Since Calculator
-permalink: /tools/days-since-calculator/
+permalink: /days-since-calculator/
 description: Calculate how many days have passed since a specific date. Perfect for tracking milestones, anniversaries, and time-based goals.
 keywords: days since calculator, days since date, time since, days ago, anniversary calculator, milestone tracker
 ---

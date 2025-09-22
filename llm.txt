@@ -65,7 +65,7 @@ Comprehensive guides for adding widgets across all platforms:
 - Privacy Policy: /privacypolicy/
 - Terms & Conditions: /termsandconditions/
 - Contact Us: /contactus/
-- Help Center: /help/
+- Help Center: /ios-mac-faq/
 
 ## Technical Details
 - Built with Jekyll static site generator

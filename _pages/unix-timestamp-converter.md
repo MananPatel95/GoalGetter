@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Unix Timestamp Converter
-permalink: /tools/unix-timestamp-converter/
+permalink: /unix-timestamp-converter/
 description: Convert Unix timestamps to human-readable dates and vice versa with our free Unix timestamp converter.
 keywords: unix timestamp converter, timestamp converter, unix time, epoch time, date converter, time converter
 ---

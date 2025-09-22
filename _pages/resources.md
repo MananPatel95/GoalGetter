@@ -13,12 +13,12 @@ Everything you need to know about using Goal Getter and setting up widgets on yo
 ## Help & Support
 
 ### iOS & Mac
-- [iOS and Mac FAQ](/help/ios-mac-faq) - Common questions about iOS and Mac features
-- [iPhone Home Screen Widget](/help/iphone-home-screen-widget) - How to add widgets to your iPhone
-- [iPhone Lock Screen Widget](/help/iphone-lock-screen-widget) - How to add widgets to your iPhone lock screen
-- [iPad Widgets](/help/ipad-widgets) - How to add widgets to your iPad
-- [Mac Desktop Widgets](/help/mac-desktop-widgets) - How to add widgets to your Mac desktop
-- [Mac Notification Center](/help/mac-notification-center) - How to add widgets to Mac Notification Center
+- [iOS and Mac FAQ](/ios-mac-faq) - Common questions about iOS and Mac features
+- [iPhone Home Screen Widget](/iphone-home-screen-widget) - How to add widgets to your iPhone
+- [iPhone Lock Screen Widget](/iphone-lock-screen-widget) - How to add widgets to your iPhone lock screen
+- [iPad Widgets](/ipad-widgets) - How to add widgets to your iPad
+- [Mac Desktop Widgets](/mac-desktop-widgets) - How to add widgets to your Mac desktop
+- [Mac Notification Center](/mac-notification-center) - How to add widgets to Mac Notification Center
 
 
 ## Getting Started

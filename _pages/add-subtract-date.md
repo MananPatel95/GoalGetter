@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Add to or Subtract from a Date
-permalink: /tools/add-subtract-date/
+permalink: /add-subtract-date/
 ---
 
 # Add to or Subtract from a Date Calculator

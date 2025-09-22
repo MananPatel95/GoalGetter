@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sleep Calculator
-permalink: /tools/sleep-calculator/
+permalink: /sleep-calculator/
 description: Calculate your optimal sleep schedule and track your sleep patterns with our free sleep calculator.
 keywords: sleep calculator, sleep schedule, sleep cycles, bedtime calculator, sleep optimization, sleep tracking
 ---

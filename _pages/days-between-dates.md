@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Days Between Dates Calculator
-permalink: /tools/days-between-dates/
+permalink: /days-between-dates/
 description: Calculate the exact number of days between any two dates with our free days between dates calculator. Perfect for project planning, vacation planning, and date calculations.
 keywords: days between dates, date calculator, days calculator, date difference, time calculator
 ---

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Time Left in Year Calculator
-permalink: /tools/time-left-in-year/
+permalink: /time-left-in-year/
 description: Calculate how much time is left in the current year with our free time left in year calculator. Track days, hours, minutes, and seconds remaining.
 keywords: time left in year, year countdown, end of year, year progress, time remaining, year calculator
 ---

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Habit Tracker Timer
-permalink: /tools/habit-tracker-timer/
+permalink: /habit-tracker-timer/
 description: Track your habits with our free habit tracker timer. Set custom timers for daily habits and build consistency with visual progress tracking.
 keywords: habit tracker timer, habit tracking, daily habits, habit timer, habit building, consistency tracker
 ---

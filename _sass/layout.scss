@@ -704,6 +704,23 @@ nav > ul > li > a:active {
 	width: calc(100%/3);
 }
 
+/* Feature card styling to match rounded footer aesthetic */
+.feature-card {
+	background: #ffffff;
+	border: 2px solid #e9ecef;
+	border-radius: 20px;
+	box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+	padding: 24px;
+	display: flex;
+	align-items: flex-start;
+	gap: 14px;
+	width: 100%;
+}
+
+.feature-icon .fa-stack .iconBack {
+	color: $feature-icons-background_color;
+}
+
 .feature:nth-child(-n+3) {
     padding-top: 0px;   
 }
@@ -738,6 +755,7 @@ nav > ul > li > a:active {
 
 .featureText > h3 {
 	color: $feature-title-color;
+    margin: 0 0 6px 0;
 }
 
 .featureText > p {

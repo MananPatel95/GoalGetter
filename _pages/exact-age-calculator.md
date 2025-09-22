@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Exact Age Calculator
-permalink: /tools/exact-age-calculator/
+permalink: /exact-age-calculator/
 description: Calculate your exact age in years, months, days, hours, and minutes. Get precise age calculations for any birth date.
 keywords: exact age calculator, age calculator, birthday calculator, age in days, age in months, precise age calculation
 ---
