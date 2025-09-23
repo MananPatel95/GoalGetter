@@ -559,7 +559,7 @@ nav > ul > li > a:active {
 	background: #ffffff;
 	border: 2px solid #e5e7eb;
 	border-radius: 16px;
-	padding: 16px;
+	padding: 32px;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -570,7 +570,7 @@ nav > ul > li > a:active {
 }
 
 .getAppImage {
-	height: 75px;
+	height: 375px;
 	width: auto;
 	display: block;
 }
@@ -584,11 +584,11 @@ nav > ul > li > a:active {
 	}
 	
 	.ios-download-card {
-		padding: 12px;
+		padding: 24px;
 	}
 	
 	.getAppImage {
-		height: 65px;
+		height: 325px;
 	}
 	
 } 
@@ -614,11 +614,11 @@ nav > ul > li > a:active {
 	}
 	
 	.ios-download-card {
-		padding: 10px;
+		padding: 20px;
 	}
 	
 	.getAppImage {
-		height: 60px;
+		height: 300px;
 	}
 }
 
