@@ -1045,6 +1045,53 @@ nav > ul > li > a:active {
 	}
 }
 
+// QR Code Styling
+.qrCodeContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	border-radius: 12px;
+	background: #f8f9fa;
+	padding: 8px;
+}
+
+.qrCode {
+	max-width: 200px;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	display: block;
+}
+
+.qrCode:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 768px) {
+	.qrCode {
+		max-width: 160px;
+	}
+	
+	.qrCodeContainer {
+		padding: 6px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.qrCode {
+		max-width: 140px;
+	}
+	
+	.qrCodeContainer {
+		padding: 4px;
+	}
+}
+
 // Footer
 
 footer {
