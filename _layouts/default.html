@@ -50,8 +50,10 @@
                             {% if site.playstore_link %}
                                 <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="assets/playstore.png"></a>
                             {% endif %}
-                            <div class="qrCodeContainer">
-                                <img class="qrCode" src="{{ '/assets/get-app.png' | relative_url }}" alt="Scan QR code to download Goal Getter">
+                            <div class="ios-download-card">
+                                <a class="appStoreLink" href="{{site.appstore_link}}">
+                                    <img class="getAppImage" src="assets/get-app.png" alt="Get App on the App Store">
+                                </a>
                             </div>
                         </div>
                     </div>
